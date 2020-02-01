@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee9c2441e41e8735eceb6e7fedbedd69",
+    "revision": "848527e9aeef67e98cab7f9a3fa658e8",
     "url": "/smartia_website/index.html"
   },
   {
-    "revision": "e83c2e9acd8d6e4eb4b4",
+    "revision": "2e297718b5c3f03cc445",
     "url": "/smartia_website/static/css/main.68a11ae7.chunk.css"
   },
   {
-    "revision": "239ec47d4f64bd2a900a",
-    "url": "/smartia_website/static/js/2.083dcb5e.chunk.js"
+    "revision": "6b6967aa3e0bf28e3d65",
+    "url": "/smartia_website/static/js/2.0df765cc.chunk.js"
   },
   {
     "revision": "44bb13c376a360a26522c8368cf779a1",
-    "url": "/smartia_website/static/js/2.083dcb5e.chunk.js.LICENSE"
+    "url": "/smartia_website/static/js/2.0df765cc.chunk.js.LICENSE"
   },
   {
-    "revision": "e83c2e9acd8d6e4eb4b4",
-    "url": "/smartia_website/static/js/main.2339f8b2.chunk.js"
+    "revision": "2e297718b5c3f03cc445",
+    "url": "/smartia_website/static/js/main.be62c091.chunk.js"
   },
   {
     "revision": "d5282bda5a8341aaa0b0",
