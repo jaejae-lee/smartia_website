@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logoIcon from '../img/logoIcon.png'
 import MainUIs from './MainUIs';
-import SearchBar from './SearchBar';
 import SearchBarNew from './SearchBarNew';
 
 class Home extends Component {
@@ -15,7 +14,6 @@ class Home extends Component {
                 <p className="time">09 : 47 AM</p>
             </section>
             <SearchBarNew/>
-            <SearchBar/>
             <MainUIs/>
             </>
         );

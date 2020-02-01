@@ -352,6 +352,7 @@ body {
   width: 40%;
   margin: 0 auto;
   margin-top: 5em;
+  margin-left: 10em;
 }
 .searchBarInputContainer .searchBar {
   width: 100%;
@@ -408,14 +409,21 @@ body {
 }
 
 .videoButtonContainer {
-  background: blue;
   position: absolute;
-  top: 15em;
-  right: 15em;
+  top: 11em;
+  right: 22em;
 }
 
 .videoButton {
   background: red;
+}
+
+.splitImage {
+  width: 10px;
+}
+
+.halfImage {
+  width: 50px;
 }
 
 .dataContainer .dataOnVideo {
@@ -437,6 +445,10 @@ body {
 .dataContainer .dataFour {
   top: 20em;
   right: 55em;
+}
+
+.chart {
+  background-color: rgba(255, 255, 255, 0.651);
 }
 
 /*# sourceMappingURL=style.css.map */

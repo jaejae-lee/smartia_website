@@ -7,6 +7,8 @@ import video from '../img/video.svg';
 import data1 from '../img/data1.png';
 import factory from '../img/factory.jpeg';
 import DataOnVideo from './DataOnVideo';
+import Chart from './Chart';
+
 
 class ExplorerVisual extends Component {
     state = { 
@@ -53,7 +55,7 @@ class ExplorerVisual extends Component {
                 </div>
                 
                 <div className="visualContainerBody">
-                { isChart ? <img src={data1} className="chart"/> : null}
+                { isChart ? <Chart/> : null}
                 { isVideo && !showSplit && !showHalf? 
                 <>
                     <img src={video2} className="video"/> 
@@ -79,8 +81,6 @@ class ExplorerVisual extends Component {
                     <button className="videoButton buttonVideoSplit"
                             onClick={this.showSplit}>Split</button>
                     <button className="videoButton buttonShowData"
-                            onClick={this.showData}>Data</button>
-                    <button className="videoButton buttonShowData"
                              onClick={this.showHalf}>Half</button>
                 </div>
                 </>
@@ -92,8 +92,6 @@ class ExplorerVisual extends Component {
                 <div className="videoButtonContainer flex">
                     <button className="videoButton buttonVideoSplit"
                             onClick={this.showSplit}>Split</button>
-                    <button className="videoButton buttonShowData"
-                            onClick={this.showData}>Data</button>
                     <button className="videoButton buttonShowHalf"
                              onClick={this.showHalf}>Half</button>
                 </div>
