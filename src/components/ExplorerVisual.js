@@ -4,25 +4,29 @@ import chart from '../img/chart.svg';
 import table from '../img/table.svg';
 import image from '../img/image.svg';
 import video from '../img/video.svg';
-import data1 from '../img/data1.png';
 import factory from '../img/factory.jpeg';
 import DataOnVideo from './DataOnVideo';
 import Chart from './Chart';
+import VideoMap from './VideoMap';
 
 
 class ExplorerVisual extends Component {
     state = { 
         isChart: true,
+        isVideoMap: false,
         isVideo: false,
         showData: false,
         showSplit:false,
         showHalf: false,
     }
     showChart = () => {
-         this.setState({isChart:true, isVideo:false})
+         this.setState({isChart:true, isVideoMap:false, isVideo:false})
      }
+    showVideoMap = () => {
+        this.setState({isChart:false, isVideoMap:true, isVideo:false})
+    }
     showVideo = () => {
-        this.setState({isVideo:true, isChart:false})
+        this.setState({isVideo:true, isChart:false, isVideoMap:false})
     }
     showData = () => {
         this.setState({showData:!this.state.showData})
@@ -33,8 +37,11 @@ class ExplorerVisual extends Component {
     showHalf = () => {
         this.setState({showHalf:!this.state.showHalf})
     }
+    showMap = () => {
+        this.setState({isChart:false, isVideoMap:!this.state.isVideoMap, isVideo:false})
+    }
     render() { 
-        let { isChart,isVideo,showData,showSplit,showHalf } = this.state
+        let { isChart,isVideo,showData,showSplit,showHalf,isVideoMap } = this.state
         return (
             <section className="visualContainer">
                 <div className="visualContainerHeader flex">
@@ -49,17 +56,21 @@ class ExplorerVisual extends Component {
                         <img src={image} className="visualbuttonImg" alt=""/>
                         Image</button>
                     <button className="visualButton"
-                            onClick={this.showVideo}>
+                            onClick={this.showVideoMap}>
                         <img src={video} className="visualbuttonImg buttonVideo" alt=""/>
                         Live</button>
                 </div>
                 
                 <div className="visualContainerBody">
-                { isChart ? <Chart/> : null}
+                { isChart ? <Chart/> : null }
+                { isVideoMap?  <VideoMap onClick={this.showVideo}/> : null }
+               
                 { isVideo && !showSplit && !showHalf? 
                 <>
                     <img src={video2} className="video"/> 
                     <div className="videoButtonContainer flex">
+                        <button className="videoButton buttonVideoSplit"
+                                onClick={this.showMap}>Map</button>
                         <button className="videoButton buttonVideoSplit"
                                 onClick={this.showSplit}>Split</button>
                         <button className="videoButton buttonShowData"
@@ -72,12 +83,14 @@ class ExplorerVisual extends Component {
                 : isVideo && showSplit ?
                 <>
                 <section className="splitImageContainer flex">
-                    <img src={factory} className="video splitImage"/> 
-                    <img src={factory} className="video splitImage"/> 
-                    <img src={factory} className="video splitImage"/> 
-                    <img src={factory} className="video splitImage"/> 
+                    <img src={factory} className="splitImage"/> 
+                    <img src={factory} className="splitImage"/> 
+                    <img src={factory} className="splitImage"/> 
+                    <img src={factory} className="splitImage"/> 
                 </section>
                 <div className="videoButtonContainer flex">
+                    <button className="videoButton buttonVideoSplit"
+                                onClick={this.showMap}>Map</button>
                     <button className="videoButton buttonVideoSplit"
                             onClick={this.showSplit}>Split</button>
                     <button className="videoButton buttonShowData"
@@ -86,8 +99,11 @@ class ExplorerVisual extends Component {
                 </>
                 : isVideo && showHalf ?
                 <>
-                <section className="splitImageContainer flex">
-                    <img src={factory} className="video halfImage"/>
+                <section className="halfImageContainer flex">
+                    <img src={factory} className="halfImage"/>
+                </section>
+                <section className="halfChart">
+                    <Chart/>
                 </section>
                 <div className="videoButtonContainer flex">
                     <button className="videoButton buttonVideoSplit"

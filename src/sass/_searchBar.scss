@@ -12,11 +12,6 @@
         padding: 0.3em;
         font-size: 1em;
     }
-    .searchIcon{
-        width: 2em;
-        position: absolute;
-        opacity: 0.5;
-    }
 }
 
 .searchResults {
@@ -33,13 +28,11 @@
 }
 
 .searchBarInputContainer{
-    margin: 0;
-    width: 40%;
-    margin: 0 auto;
+    margin-left: 33em;
+    margin-right: 33em;
+    width: 35%;
     margin-top: 5em;
-    margin-left:10em;
-    // position: relative;
-
+    flex-wrap: wrap;
     .searchBar{
         width: 100%;
         margin: 0 auto;
@@ -47,7 +40,15 @@
         border: none;
         background-color: transparent;
         padding: 0.3em;
+        padding-left: 3em;
         font-size: 1em;
         border-bottom: 2px solid rgba(255, 255, 255, 0.705);
+    }
+    .searchIcon{
+        width: 1.5em;
+        position: absolute;
+        top: 0;
+        opacity: 0.5;
+        margin: 0.5em;
     }
 }

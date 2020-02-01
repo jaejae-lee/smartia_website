@@ -22,6 +22,10 @@
                 border-bottom: 3px solid $mainLight;
                 opacity:1;
             }
+            &:active{
+                border-bottom: 3px solid $mainLight;
+                opacity:1;
+            }
         }
         .visualbuttonImg{
             width: 2em;
@@ -52,12 +56,76 @@
     background: red;
 }
 
-//Split Images
-
-.splitImage{
-    width: 10px;
+//Map
+.floorPlan{
 }
 
+.locationButton{
+    background: none;
+    border: none;
+    &:focus{
+        outline: none;
+    }
+    .locationIcon{
+        top: 21em;
+        right: 55em;
+        width: 58px;
+        position: absolute;
+    }
+}
+
+.zones{
+    position: absolute;
+    top: 30em;
+    right: 25em;
+    .zoneNumber{
+        display: inline-block;
+        background-color: #00aaf1;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .zoneName{
+        color: $white;
+        display: block;
+        margin-bottom: 2em;
+    }
+}
+
+.videoThumbnailContainer{
+    position: absolute;
+    width: 18em;
+    background-color: grey;
+    top: 11em;
+    right: 59em;
+    height: 12em;
+    .videoThumbnail{
+        color: $whiteA;
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
+
+//Split Images
+.splitImageContainer{
+    flex-wrap: wrap;
+
+    .splitImage{
+        width: 46%;
+        margin: 1em;
+    }
+}
 .halfImage{
     width: 50px;
+}
+
+//Half Images
+.halfImage{
+    width: 99%;
+    height: 20em;
+}
+.halfChart{
+    width: 50%;
 }

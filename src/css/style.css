@@ -27,18 +27,32 @@ body {
   margin-top: 2em;
 }
 
+.dataCompRight {
+  position: absolute;
+  top: 6.5em;
+  width: 19%;
+}
+
+.dataCompLeft {
+  position: absolute;
+  width: 19%;
+  top: 6.5em;
+  left: 78.5em;
+}
+
 .buttonHomeContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .buttonGroup {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
   width: 80%;
-  margin-top: 7%;
+  margin-top: 15%;
 }
 .buttonGroup .dataIcon {
   width: 70%;
@@ -119,7 +133,7 @@ body {
 .buttonGroupSmall {
   position: relative;
   width: 50%;
-  margin-top: 1em;
+  margin-top: 3em;
 }
 .buttonGroupSmall .buttonContainerSmall .buttonSmall {
   width: 80px;
@@ -328,11 +342,6 @@ body {
   padding: 0.3em;
   font-size: 1em;
 }
-.searchBarContainer .searchIcon {
-  width: 2em;
-  position: absolute;
-  opacity: 0.5;
-}
 
 .searchResults {
   background: rgba(255, 255, 255, 0.644);
@@ -348,11 +357,11 @@ body {
 }
 
 .searchBarInputContainer {
-  margin: 0;
-  width: 40%;
-  margin: 0 auto;
+  margin-left: 33em;
+  margin-right: 33em;
+  width: 35%;
   margin-top: 5em;
-  margin-left: 10em;
+  flex-wrap: wrap;
 }
 .searchBarInputContainer .searchBar {
   width: 100%;
@@ -361,8 +370,16 @@ body {
   border: none;
   background-color: transparent;
   padding: 0.3em;
+  padding-left: 3em;
   font-size: 1em;
   border-bottom: 2px solid rgba(255, 255, 255, 0.705);
+}
+.searchBarInputContainer .searchIcon {
+  width: 1.5em;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  margin: 0.5em;
 }
 
 .visualContainer {
@@ -388,6 +405,10 @@ body {
   height: 4rem;
 }
 .visualContainer .visualContainerHeader .visualButton:hover {
+  border-bottom: 3px solid #00aaf1;
+  opacity: 1;
+}
+.visualContainer .visualContainerHeader .visualButton:active {
   border-bottom: 3px solid #00aaf1;
   opacity: 1;
 }
@@ -418,12 +439,73 @@ body {
   background: red;
 }
 
-.splitImage {
-  width: 10px;
+.locationButton {
+  background: none;
+  border: none;
+}
+.locationButton:focus {
+  outline: none;
+}
+.locationButton .locationIcon {
+  top: 21em;
+  right: 55em;
+  width: 58px;
+  position: absolute;
+}
+
+.zones {
+  position: absolute;
+  top: 30em;
+  right: 25em;
+}
+.zones .zoneNumber {
+  display: inline-block;
+  background-color: #00aaf1;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+.zones .zoneName {
+  color: white;
+  display: block;
+  margin-bottom: 2em;
+}
+
+.videoThumbnailContainer {
+  position: absolute;
+  width: 18em;
+  background-color: grey;
+  top: 11em;
+  right: 59em;
+  height: 12em;
+}
+.videoThumbnailContainer .videoThumbnail {
+  color: rgba(255, 255, 255, 0.372);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.splitImageContainer {
+  flex-wrap: wrap;
+}
+.splitImageContainer .splitImage {
+  width: 46%;
+  margin: 1em;
 }
 
 .halfImage {
   width: 50px;
+}
+
+.halfImage {
+  width: 99%;
+  height: 20em;
+}
+
+.halfChart {
+  width: 50%;
 }
 
 .dataContainer .dataOnVideo {
@@ -431,16 +513,17 @@ body {
   position: absolute;
 }
 .dataContainer .dataOne {
-  top: 20em;
-  right: 25em;
+  top: 25em;
+  right: 63em;
 }
 .dataContainer .dataTwo {
-  top: 20em;
-  right: 35em;
+  width: 7%;
+  top: 29em;
+  right: 56em;
 }
 .dataContainer .dataThree {
-  top: 20em;
-  right: 45em;
+  top: 40em;
+  right: 23em;
 }
 .dataContainer .dataFour {
   top: 20em;
@@ -449,6 +532,13 @@ body {
 
 .chart {
   background-color: rgba(255, 255, 255, 0.651);
+}
+
+.searchResultBar {
+  width: 100%;
+  position: relative;
+  top: 1em;
+  right: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

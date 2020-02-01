@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Motion, spring, StaggeredMotion, presets } from 'react-motion';
-import NotificationsBar from './NotificationsBar';
+import SearchResultBar from './SearchResultBar';
 import searchIcon from '../img/searchIcon.svg';
   
   class SearchBarInput extends Component {
@@ -17,15 +17,14 @@ import searchIcon from '../img/searchIcon.svg';
     render() {
       return (
           <>
+          <img src={searchIcon} className="searchIcon" alt="search icon" /> 
           <input type="input" className="searchBar" placeholder="Search here" 
-                //  onFocus={this.toggleNotificationBar}
-                //  onBlur={this.toggleNotificationBar}
                  value={this.props.inputValue}
                  onChange={this.props.onChange} />
           <Motion defaultStyle={{x: 0}} style={{x: spring(this.props.open ? 0 : 1, presets.stiff)}} >
             {interp => <span className="nav__notification__num" style={{transform: `translateZ(0) scale(${interp.x}`, opacity: interp.x}}></span>}
           </Motion>
-            <NotificationsBar open={this.props.open}/>
+            <SearchResultBar open={this.props.open}/>
           </> 
       )
     }

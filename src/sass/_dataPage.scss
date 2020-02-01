@@ -6,11 +6,23 @@
     margin-top: 2em;
 }
 
+.dataComp{
+    //position: absolute;
+}
+
+.dataCompRight{
+    position: absolute;
+    top: 6.5em;
+    width: 19%;
+}
+.dataCompLeft{
+    position: absolute;
+    width: 19%;
+    top: 6.5em;
+    left: 78.5em;
+}
 .buttonHomeContainer{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    .buttonHome{
-
-    }    
+    align-items: flex-end;  
 }
