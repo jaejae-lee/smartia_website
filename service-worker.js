@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/smartia_website/precache-manifest.d1959beb2973db4ad8583933d5e29280.js"
+  "/smartia_website/precache-manifest.ccffa84eb8a764c223433d957c400a25.js"
 );
 
 self.addEventListener('message', (event) => {
