@@ -1,0 +1,63 @@
+.visualContainer{
+    width: 60%;
+    height: 45em;
+    background-color: $mainDarkA;
+    margin: 2em auto;
+    
+    .visualContainerHeader{
+        background: none;
+        width: 100%;
+        height: 4em;
+        justify-content: flex-end;
+        .visualButton{
+            cursor: pointer;
+            background: none;
+            border:none;
+            margin-right: 2em;
+            font-size: 0.7em;
+            opacity: 0.5;
+            color: $white;
+            height: 4rem;
+            &:hover{
+                border-bottom: 3px solid $mainLight;
+                opacity:1;
+            }
+        }
+        .visualbuttonImg{
+            width: 2em;
+            margin-right: 1em;
+            opacity: 0.5;
+            &:hover{
+                opacity:1;
+            }
+        }
+    }
+    .visualContainerBody{
+        .video{
+            width: 100%;
+            height: 41rem;
+        }
+        .chart{ 
+            width: 100%;
+            height: 41rem;
+        }   
+    } 
+}
+.videoButtonContainer{
+    position: absolute;
+    top: 11em;
+    right: 22em;
+}
+.videoButton{
+    background: red;
+}
+
+//Split Images
+
+.splitImage{
+    width: 10px;
+}
+
+.halfImage{
+    width: 50px;
+}

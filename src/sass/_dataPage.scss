@@ -1,0 +1,16 @@
+.dataCompContainer{
+    width: 95%;
+    height: 45em;
+    background-color: $mainDarkA;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.buttonHomeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .buttonHome{
+
+    }    
+}

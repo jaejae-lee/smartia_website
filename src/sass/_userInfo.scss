@@ -1,0 +1,24 @@
+.userContainer{
+    width: 50%;
+    margin: auto;
+    margin-top:7%;
+    p{
+        display: inline; 
+        font-weight: 500; 
+        letter-spacing: 0.1rem;
+    }
+    .userName{
+        color: $white;
+        padding-right: 5%;
+        border-right: 1px solid $white;
+    }
+    .time{
+        color: $white;
+    }
+    .logoIcon{
+        width: 2.5em;
+    }
+}
+
+
+

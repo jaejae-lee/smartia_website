@@ -1,0 +1,20 @@
+*:focus {
+    outline: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p,label{
+    color: $mainLight;
+}
+
+body{
+    // background-image: url("../img/bg.jpg");
+    // background-blend-mode: color-burn;
+    background: lighten($mainDark, 10%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

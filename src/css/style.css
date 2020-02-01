@@ -1,0 +1,442 @@
+*:focus {
+  outline: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p, label {
+  color: #00aaf1;
+}
+
+body {
+  background: #02435d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.dataCompContainer {
+  width: 95%;
+  height: 45em;
+  background-color: #012c3d98;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.buttonHomeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  margin-top: 7%;
+}
+.buttonGroup .dataIcon {
+  width: 70%;
+  padding: 5px;
+}
+
+.buttonContainer {
+  margin: auto;
+  width: 120px;
+}
+.buttonContainer .buttonlabel {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: #00aaf1;
+  padding-top: 1.5em;
+}
+.buttonContainer .button {
+  width: 100%;
+  margin: auto;
+}
+
+.buttonBg {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background-color: #011f2b;
+  opacity: 0.8;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttonBg:hover {
+  background: #000d12;
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttonLabelContatiner {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.highlight .button {
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight .button:before {
+  content: "";
+  position: absolute;
+  top: -27px;
+  left: -93px;
+  height: 182px;
+  width: 72px;
+  background: rgba(255, 255, 255, 0.7);
+  transform: rotate(6deg);
+}
+
+.highlight .button:hover:before {
+  left: 150px;
+  transition: all 0.5s;
+}
+
+.buttonGroupSmall {
+  position: relative;
+  width: 50%;
+  margin-top: 1em;
+}
+.buttonGroupSmall .buttonContainerSmall .buttonSmall {
+  width: 80px;
+  height: 80px;
+}
+
+.nav {
+  width: 100%;
+  height: 10%;
+  background-color: #011f2b;
+  opacity: 0.7;
+}
+.nav .logo {
+  width: 13%;
+  margin: 10px 10px 10px 20px;
+}
+.nav .logOutContainer {
+  margin-right: 5em;
+}
+.nav .logOutContainer .dataIconHeader {
+  width: 50px;
+  margin-right: 3em;
+}
+.nav .logOutContainer .dataIconHeaderNoti {
+  width: 39px;
+  height: 28px;
+  cursor: pointer;
+}
+.nav .logOutContainer .iconLogout {
+  width: 2.5em;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.notiContainer {
+  margin-left: 83%;
+  margin-top: 1.5rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav__notification {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nav__notification__icon {
+  color: white;
+  font-size: 1em;
+  width: 39px;
+  height: 28px;
+  text-align: center;
+  border-radius: 40px;
+  border: 2px solid #00aaf1;
+  cursor: pointer;
+  position: absolute;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.1);
+  animation: bounce 3s cubic-bezier(0.3, 0, 0.7, 1) infinite 2s;
+}
+.nav__notification__icon:before {
+  content: "";
+  border: 3px solid rgba(236, 240, 241, 0.3);
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 50%;
+  background: none;
+  width: 2rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  animation: bounceScale 3s cubic-bezier(0.3, 0, 0.7, 1) infinite 2s;
+}
+
+@keyframes bounceScale {
+  0%, 20% {
+    opacity: 0;
+    border-width: 3px;
+  }
+  10% {
+    opacity: 1;
+  }
+  20%, 100% {
+    transform: scale(2);
+    border-width: 1px;
+    opacity: 0;
+  }
+}
+@keyframes bounce {
+  0%, 20% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.15);
+  }
+}
+.nav__notification_bar {
+  contain: layout;
+  position: relative;
+  top: 3em;
+  right: 8em;
+  width: 15vw;
+  background: rgba(255, 255, 255, 0.644);
+  transform: translate(1rem, 0.5rem);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  box-sizing: border-box;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.nav__notification_bar h3 {
+  user-select: none;
+  cursor: default;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #011f2b;
+  letter-spacing: 0.1rem;
+}
+
+.nav__notifications__list {
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__notifications__list__item {
+  contain: strict;
+  background: none;
+  height: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding: 0 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.5;
+  transition: opacity 250ms cubic-bezier(0.3, 0, 0.7, 1);
+}
+.nav__notifications__list__item:hover {
+  opacity: 1;
+}
+.nav__notifications__list__item:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+.nav__notifications__list__item.nav__notifications__list__item--new {
+  background: #e2e8e9;
+  opacity: 1;
+}
+
+.nav__notifications__list__item__desc {
+  height: 50%;
+  flex: 1;
+  padding: 0 1rem;
+  padding-right: 0;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7rem;
+  color: rgba(149, 165, 166, 0.8);
+}
+.nav__notifications__list__item__desc em {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  color: #011f2b;
+}
+
+.userContainer {
+  width: 50%;
+  margin: auto;
+  margin-top: 7%;
+}
+.userContainer p {
+  display: inline;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+.userContainer .userName {
+  color: white;
+  padding-right: 5%;
+  border-right: 1px solid white;
+}
+.userContainer .time {
+  color: white;
+}
+.userContainer .logoIcon {
+  width: 2.5em;
+}
+
+.searchBarContainer {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.705);
+}
+.searchBarContainer .searchBar {
+  width: 40%;
+  height: 3em;
+  border: none;
+  margin-left: 10%;
+  background-color: transparent;
+  padding: 0.3em;
+  font-size: 1em;
+}
+.searchBarContainer .searchIcon {
+  width: 2em;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.searchResults {
+  background: rgba(255, 255, 255, 0.644);
+  transform: translate(1rem, 0.5rem);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  box-sizing: border-box;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+  transform: translate(1rem, 0.5rem);
+  margin: 0 auto;
+  width: 50%;
+  z-index: 1;
+}
+
+.searchBarInputContainer {
+  margin: 0;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+.searchBarInputContainer .searchBar {
+  width: 100%;
+  margin: 0 auto;
+  height: 3em;
+  border: none;
+  background-color: transparent;
+  padding: 0.3em;
+  font-size: 1em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.705);
+}
+
+.visualContainer {
+  width: 60%;
+  height: 45em;
+  background-color: #012c3d98;
+  margin: 2em auto;
+}
+.visualContainer .visualContainerHeader {
+  background: none;
+  width: 100%;
+  height: 4em;
+  justify-content: flex-end;
+}
+.visualContainer .visualContainerHeader .visualButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-right: 2em;
+  font-size: 0.7em;
+  opacity: 0.5;
+  color: white;
+  height: 4rem;
+}
+.visualContainer .visualContainerHeader .visualButton:hover {
+  border-bottom: 3px solid #00aaf1;
+  opacity: 1;
+}
+.visualContainer .visualContainerHeader .visualbuttonImg {
+  width: 2em;
+  margin-right: 1em;
+  opacity: 0.5;
+}
+.visualContainer .visualContainerHeader .visualbuttonImg:hover {
+  opacity: 1;
+}
+.visualContainer .visualContainerBody .video {
+  width: 100%;
+  height: 41rem;
+}
+.visualContainer .visualContainerBody .chart {
+  width: 100%;
+  height: 41rem;
+}
+
+.videoButtonContainer {
+  background: blue;
+  position: absolute;
+  top: 15em;
+  right: 15em;
+}
+
+.videoButton {
+  background: red;
+}
+
+.dataContainer .dataOnVideo {
+  width: 10em;
+  position: absolute;
+}
+.dataContainer .dataOne {
+  top: 20em;
+  right: 25em;
+}
+.dataContainer .dataTwo {
+  top: 20em;
+  right: 35em;
+}
+.dataContainer .dataThree {
+  top: 20em;
+  right: 45em;
+}
+.dataContainer .dataFour {
+  top: 20em;
+  right: 55em;
+}
+
+/*# sourceMappingURL=style.css.map */

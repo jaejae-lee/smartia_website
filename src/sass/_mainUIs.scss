@@ -1,0 +1,88 @@
+.buttonGroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    margin-top: 7%;
+    .dataIcon{
+        width:70%;
+        padding: 5px;
+    }
+}
+
+.buttonContainer{
+    margin:auto;
+    width: 120px;
+    .buttonlabel{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        color: $mainLight;
+        padding-top: 1.5em;
+    }
+    .button{
+        width: 100%;
+        margin:auto;
+    }
+}
+
+.buttonBg{
+    width:120px; height:120px;
+    border-radius:60px;
+    background-color: $mainDark;
+    opacity: 0.8;
+    border: none;
+    
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+}
+
+.buttonBg:hover{
+    background: darken($mainDark, 5%);
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.buttonLabelContatiner{
+    width: 60%;
+    margin:0 auto;
+}
+
+.highlight .button {
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight .button:before {
+    content: "";
+    position: absolute;
+    top: -27px;
+    left: -93px;
+    height: 182px;
+    width: 72px;
+    background: rgba(255, 255, 255, 0.7);
+    transform: rotate(6deg);
+}
+
+.highlight .button:hover:before {
+    left: 150px;
+    transition: all .5s;
+}
+
+  
+
+  
