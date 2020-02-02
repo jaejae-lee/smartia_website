@@ -1,14 +1,16 @@
 .visualContainer{
+    position: relative;
+    right: 19em;
     width: 60%;
     height: 45em;
     background-color: $mainDarkA;
-    margin: 2em auto;
     
     .visualContainerHeader{
-        background: none;
+        background: $mainDarkTwo;
         width: 100%;
         height: 4em;
         justify-content: flex-end;
+        border-bottom: 2px solid lighten($mainDarkA, 10%) ;
         .visualButton{
             cursor: pointer;
             background: none;
@@ -42,18 +44,30 @@
             height: 41rem;
         }
         .chart{ 
-            width: 100%;
+            width: 93%;
             height: 41rem;
         }   
     } 
 }
+
+//buttons
 .videoButtonContainer{
     position: absolute;
-    top: 11em;
-    right: 22em;
+    top: 5em;
+    right: 2em;
+    display: block;
 }
 .videoButton{
-    background: red;
+    background: none;
+    border: none;
+    display: block;
+    margin-bottom:2em;
+}
+.videoButtonIcon{
+    width: 30px; height: 30px;
+    &:hover{
+        fill:red;
+    }
 }
 
 //Map
@@ -67,39 +81,40 @@
         outline: none;
     }
     .locationIcon{
-        top: 21em;
-        right: 55em;
+        top: -32em;
+        right: -16em;
         width: 58px;
-        position: absolute;
+        position: relative;
     }
 }
 
 .zones{
     position: absolute;
     top: 30em;
-    right: 25em;
+    right: 2em;
     .zoneNumber{
         display: inline-block;
-        background-color: #00aaf1;
+        background-color:$mainLightA;
         color: white;
-        width: 30px;
-        height: 30px;
-        border-radius: 15px;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
         text-align: center;
     }
     .zoneName{
         color: $white;
-        display: block;
-        margin-bottom: 2em;
+        display: inline-block;
+        margin-bottom: 1em;
+        margin-left: 1em;
     }
 }
 
 .videoThumbnailContainer{
-    position: absolute;
-    width: 18em;
+    position: relative;
+    width: 16em;
     background-color: grey;
-    top: 11em;
-    right: 59em;
+    top: -47em;
+    right: -21em;
     height: 12em;
     .videoThumbnail{
         color: $whiteA;

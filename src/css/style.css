@@ -383,16 +383,18 @@ body {
 }
 
 .visualContainer {
+  position: relative;
+  right: 19em;
   width: 60%;
   height: 45em;
   background-color: #012c3d98;
-  margin: 2em auto;
 }
 .visualContainer .visualContainerHeader {
-  background: none;
+  background: rgba(57, 57, 73, 0.74);
   width: 100%;
   height: 4em;
   justify-content: flex-end;
+  border-bottom: 2px solid rgba(2, 80, 111, 0.5960784314);
 }
 .visualContainer .visualContainerHeader .visualButton {
   cursor: pointer;
@@ -425,18 +427,30 @@ body {
   height: 41rem;
 }
 .visualContainer .visualContainerBody .chart {
-  width: 100%;
+  width: 93%;
   height: 41rem;
 }
 
 .videoButtonContainer {
   position: absolute;
-  top: 11em;
-  right: 22em;
+  top: 5em;
+  right: 2em;
+  display: block;
 }
 
 .videoButton {
-  background: red;
+  background: none;
+  border: none;
+  display: block;
+  margin-bottom: 2em;
+}
+
+.videoButtonIcon {
+  width: 30px;
+  height: 30px;
+}
+.videoButtonIcon:hover {
+  fill: red;
 }
 
 .locationButton {
@@ -447,38 +461,39 @@ body {
   outline: none;
 }
 .locationButton .locationIcon {
-  top: 21em;
-  right: 55em;
+  top: -32em;
+  right: -16em;
   width: 58px;
-  position: absolute;
+  position: relative;
 }
 
 .zones {
   position: absolute;
   top: 30em;
-  right: 25em;
+  right: 2em;
 }
 .zones .zoneNumber {
   display: inline-block;
-  background-color: #00aaf1;
+  background-color: #00a9f194;
   color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
   text-align: center;
 }
 .zones .zoneName {
   color: white;
-  display: block;
-  margin-bottom: 2em;
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .videoThumbnailContainer {
-  position: absolute;
-  width: 18em;
+  position: relative;
+  width: 16em;
   background-color: grey;
-  top: 11em;
-  right: 59em;
+  top: -47em;
+  right: -21em;
   height: 12em;
 }
 .videoThumbnailContainer .videoThumbnail {
@@ -531,7 +546,11 @@ body {
 }
 
 .chart {
-  background-color: rgba(255, 255, 255, 0.651);
+  width: 100%;
+  height: 41rem;
+  position: relative;
+  top: 5em;
+  right: -2em;
 }
 
 .searchResultBar {
@@ -539,6 +558,12 @@ body {
   position: relative;
   top: 1em;
   right: 1em;
+}
+
+.panelContainer {
+  width: 20%;
+  height: 100%;
+  background: red;
 }
 
 /*# sourceMappingURL=style.css.map */

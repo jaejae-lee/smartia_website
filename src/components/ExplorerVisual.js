@@ -8,16 +8,24 @@ import factory from '../img/factory.jpeg';
 import DataOnVideo from './DataOnVideo';
 import Chart from './Chart';
 import VideoMap from './VideoMap';
-
+import ExplorerVisualButtons from './ExplorerVisualButtons';
+import map from '../img/map.svg';
+import data from '../img/data.svg';
+import split from '../img/split.svg';
+import half from '../img/half.svg';
+import full from '../img/full.svg';
 
 class ExplorerVisual extends Component {
-    state = { 
-        isChart: true,
-        isVideoMap: false,
-        isVideo: false,
-        showData: false,
-        showSplit:false,
-        showHalf: false,
+    constructor(props){
+        super(props);
+        this.state = { 
+            isChart: true,
+            isVideoMap: false,
+            isVideo: false,
+            showData: false,
+            showSplit:false,
+            showHalf: false,
+        }
     }
     showChart = () => {
          this.setState({isChart:true, isVideoMap:false, isVideo:false})
@@ -41,7 +49,7 @@ class ExplorerVisual extends Component {
         this.setState({isChart:false, isVideoMap:!this.state.isVideoMap, isVideo:false})
     }
     render() { 
-        let { isChart,isVideo,showData,showSplit,showHalf,isVideoMap } = this.state
+        let { isChart,isVideo,showData,showSplit,showHalf,isVideoMap } = this.state;
         return (
             <section className="visualContainer">
                 <div className="visualContainerHeader flex">
@@ -70,14 +78,23 @@ class ExplorerVisual extends Component {
                     <img src={video2} className="video"/> 
                     <div className="videoButtonContainer flex">
                         <button className="videoButton buttonVideoSplit"
-                                onClick={this.showMap}>Map</button>
+                                onClick={this.showMap}>
+                            <img src={map} className="videoButtonIcon" alt=""/>
+                        </button>
                         <button className="videoButton buttonVideoSplit"
-                                onClick={this.showSplit}>Split</button>
+                                onClick={this.showSplit}>
+                                <img src={split} className="videoButtonIcon" alt=""/>
+                        </button>
                         <button className="videoButton buttonShowData"
-                                onClick={this.showData}>Data</button>
+                                onClick={this.showData}>
+                                <img src={data} className="videoButtonIcon" alt=""/>
+                        </button>
                         <button className="videoButton buttonShowData"
-                                onClick={this.showHalf}>Half</button>
+                                onClick={this.showHalf}>
+                                <img src={half} className="videoButtonIcon" alt=""/>
+                        </button>
                     </div>
+                    {/* <ExplorerVisualButtons /> */}
                     { showData? <DataOnVideo/> : null }
                 </>
                 : isVideo && showSplit ?
@@ -90,11 +107,17 @@ class ExplorerVisual extends Component {
                 </section>
                 <div className="videoButtonContainer flex">
                     <button className="videoButton buttonVideoSplit"
-                                onClick={this.showMap}>Map</button>
+                                onClick={this.showMap}>
+                        <img src={map} className="videoButtonIcon" alt=""/>
+                    </button>
                     <button className="videoButton buttonVideoSplit"
-                            onClick={this.showSplit}>Split</button>
+                            onClick={this.showSplit}>
+                        <img src={full} className="videoButtonIcon" alt=""/>
+                    </button>
                     <button className="videoButton buttonShowData"
-                             onClick={this.showHalf}>Half</button>
+                            onClick={this.showHalf}>
+                        <img src={half} className="videoButtonIcon" alt=""/>
+                    </button>
                 </div>
                 </>
                 : isVideo && showHalf ?
@@ -107,9 +130,17 @@ class ExplorerVisual extends Component {
                 </section>
                 <div className="videoButtonContainer flex">
                     <button className="videoButton buttonVideoSplit"
-                            onClick={this.showSplit}>Split</button>
-                    <button className="videoButton buttonShowHalf"
-                             onClick={this.showHalf}>Half</button>
+                                onClick={this.showMap}>
+                        <img src={map} className="videoButtonIcon" alt=""/>
+                    </button>
+                    <button className="videoButton buttonVideoSplit"
+                            onClick={this.showSplit}>
+                        <img src={split} className="videoButtonIcon" alt=""/>
+                    </button>
+                    <button className="videoButton buttonShowData"
+                            onClick={this.showHalf}>
+                        <img src={full} className="videoButtonIcon" alt=""/>
+                    </button>
                 </div>
                 </>
                 :
