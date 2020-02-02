@@ -28,10 +28,10 @@ class ExplorerVisual extends Component {
         }
     }
     showChart = () => {
-         this.setState({isChart:true, isVideoMap:false, isVideo:false})
+         this.setState({isChart:true, isVideoMap:false, isVideo:false, showData: false, showSplit:false, showHalf: false })
      }
     showVideoMap = () => {
-        this.setState({isChart:false, isVideoMap:true, isVideo:false})
+        this.setState({isChart:false, isVideoMap:true, isVideo:false,showData: false, showSplit:false, showHalf: false })
     }
     showVideo = () => {
         this.setState({isVideo:true, isChart:false, isVideoMap:false})
@@ -43,10 +43,10 @@ class ExplorerVisual extends Component {
         this.setState({showSplit:!this.state.showSplit})
     }
     showHalf = () => {
-        this.setState({showHalf:!this.state.showHalf})
+        this.setState({showHalf:!this.state.showHalf, showSplit:false })
     }
     showMap = () => {
-        this.setState({isChart:false, isVideoMap:!this.state.isVideoMap, isVideo:false})
+        this.setState({isChart:false, isVideoMap:!this.state.isVideoMap, isVideo:false,showSplit:false, showHalf: false })
     }
     render() { 
         let { isChart,isVideo,showData,showSplit,showHalf,isVideoMap } = this.state;
@@ -70,7 +70,7 @@ class ExplorerVisual extends Component {
                 </div>
                 
                 <div className="visualContainerBody">
-                { isChart ? <Chart/> : null }
+                { isChart? <Chart/> : null }
                 { isVideoMap?  <VideoMap onClick={this.showVideo}/> : null }
                
                 { isVideo && !showSplit && !showHalf? 
@@ -99,11 +99,15 @@ class ExplorerVisual extends Component {
                 </>
                 : isVideo && showSplit ?
                 <>
-                <section className="splitImageContainer flex">
-                    <img src={factory} className="splitImage"/> 
-                    <img src={factory} className="splitImage"/> 
-                    <img src={factory} className="splitImage"/> 
-                    <img src={factory} className="splitImage"/> 
+                <section className="splitImageContainer">
+                    <div className="splitImageContainerTop">
+                        <img src={factory} className="splitImage"/> 
+                        <img src={factory} className="splitImage"/> 
+                    </div>
+                    <div className="splitImageContainerBottom">
+                        <img src={factory} className="splitImage"/> 
+                        <img src={factory} className="splitImage"/> 
+                    </div>
                 </section>
                 <div className="videoButtonContainer flex">
                     <button className="videoButton buttonVideoSplit"

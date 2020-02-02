@@ -1,24 +1,50 @@
 .dataContainer{
+    position: absolute;
+    top:0;
     .dataOnVideo{
         width: 10em;
         position: absolute; 
     }
     .dataOne{
-        top: 25em;
-        right: 63em;
+        top: 220px;
+        left: 618px;
+        width: 220px;
+        opacity: 0.8;
+        z-index: 1;
     }
     .dataTwo{
-        width: 7%;
-        top: 29em;
-        right: 56em;
+        width: 118px;
+        top: 348px;
+        left: 527px;
     }
     .dataThree{
-        top: 40em;
-        right: 23em;
+        display: none;
     }
     .dataFour{
-        top: 20em;
-        right: 55em;
+        display: none;
+    }
+    .dataFive{
+        top: 220px;
+        left: 526px;
+        width: 122px;
+    }
+    .dataSix{
+        bottom: 184px;
+        right: 364px;
+    }
+    .dataSeven{
+        bottom: 288px;
+        right: 415px;
+    }
+}
+.chartOnVideo{
+    width: 51%;
+    height: 52%;
+    position: relative;
+    top: -22em;
+    right: 1em;
+    canvas{
+        background: none;
     }
 }
 

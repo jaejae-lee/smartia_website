@@ -373,6 +373,7 @@ body {
   padding-left: 3em;
   font-size: 1em;
   border-bottom: 2px solid rgba(255, 255, 255, 0.705);
+  color: white;
 }
 .searchBarInputContainer .searchIcon {
   width: 1.5em;
@@ -383,7 +384,6 @@ body {
 }
 
 .visualContainer {
-  position: relative;
   right: 19em;
   width: 60%;
   height: 45em;
@@ -422,6 +422,9 @@ body {
 .visualContainer .visualContainerHeader .visualbuttonImg:hover {
   opacity: 1;
 }
+.visualContainer .visualContainerBody {
+  height: 41rem;
+}
 .visualContainer .visualContainerBody .video {
   width: 100%;
   height: 41rem;
@@ -433,8 +436,8 @@ body {
 
 .videoButtonContainer {
   position: absolute;
-  top: 5em;
-  right: 2em;
+  top: 12em;
+  right: 23em;
   display: block;
 }
 
@@ -467,10 +470,31 @@ body {
   position: relative;
 }
 
+.IconTwo {
+  top: -20em;
+  right: -20em;
+  width: 58px;
+  position: relative;
+}
+
+.IconThree {
+  top: -38em;
+  right: -16em;
+  width: 58px;
+  position: relative;
+}
+
+.IconFour {
+  top: -32em;
+  right: -20em;
+  width: 58px;
+  position: relative;
+}
+
 .zones {
   position: absolute;
-  top: 30em;
-  right: 2em;
+  top: 37em;
+  right: 24em;
 }
 .zones .zoneNumber {
   display: inline-block;
@@ -480,34 +504,48 @@ body {
   height: 20px;
   border-radius: 10px;
   text-align: center;
+  font-size: 13px;
 }
 .zones .zoneName {
-  color: white;
+  color: #00a9f194;
   display: inline-block;
   margin-bottom: 1em;
   margin-left: 1em;
+  font-style: italic;
 }
 
 .videoThumbnailContainer {
   position: relative;
-  width: 16em;
-  background-color: grey;
+  width: 17em;
+  background-color: #011f2b;
   top: -47em;
   right: -21em;
   height: 12em;
+  padding: 2em;
 }
 .videoThumbnailContainer .videoThumbnail {
   color: rgba(255, 255, 255, 0.372);
-  font-size: 2.5em;
+  line-height: 1em;
+  font-size: 1.5em;
+  font-style: italic;
   text-align: center;
 }
 
 .splitImageContainer {
-  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.splitImageContainer .splitImageContainerTop {
+  width: 100%;
+  margin: 19px;
+}
+.splitImageContainer .splitImageContainerBottom {
+  width: 100%;
+  margin: 19px;
 }
 .splitImageContainer .splitImage {
   width: 46%;
-  margin: 1em;
+  margin: 0.5em;
+  border: 5px solid rgba(255, 255, 255, 0.372);
 }
 
 .halfImage {
@@ -520,7 +558,10 @@ body {
 }
 
 .halfChart {
-  width: 50%;
+  width: 76%;
+  position: relative;
+  top: -6.5em;
+  right: -7em;
 }
 
 .dataContainer .dataOnVideo {
@@ -528,29 +569,56 @@ body {
   position: absolute;
 }
 .dataContainer .dataOne {
-  top: 25em;
-  right: 63em;
+  top: 220px;
+  left: 618px;
+  width: 220px;
+  opacity: 0.8;
 }
 .dataContainer .dataTwo {
-  width: 7%;
-  top: 29em;
-  right: 56em;
+  width: 118px;
+  top: 348px;
+  left: 527px;
+  z-index: 1;
 }
 .dataContainer .dataThree {
-  top: 40em;
-  right: 23em;
+  display: none;
 }
 .dataContainer .dataFour {
-  top: 20em;
-  right: 55em;
+  display: none;
+}
+.dataContainer .dataFive {
+  top: 220px;
+  left: 526px;
+  width: 122px;
+}
+.dataContainer .dataSix {
+  bottom: -46px;
+  right: 364px;
+}
+.dataContainer .dataSeven {
+  bottom: 60px;
+  right: 415px;
+}
+
+.chartOnVideo {
+  width: 51%;
+  height: 52%;
+  position: relative;
+  top: -19em;
+  right: 1em;
+  color: white;
 }
 
 .chart {
   width: 100%;
   height: 41rem;
   position: relative;
-  top: 5em;
+  top: 7em;
   right: -2em;
+}
+
+canvas {
+  background: rgba(57, 57, 73, 0.74);
 }
 
 .searchResultBar {
@@ -563,7 +631,64 @@ body {
 .panelContainer {
   width: 20%;
   height: 100%;
-  background: red;
+  background: #012c3d98;
+  margin: -0.5em;
+}
+.panelContainer .panelHeader {
+  background: rgba(57, 57, 73, 0.74);
+  width: 100%;
+  height: 4em;
+  border-bottom: 2px solid rgba(2, 80, 111, 0.5960784314);
+  color: white;
+  padding: 1em;
+}
+.panelContainer .panelBody {
+  padding: 1em;
+}
+.panelContainer .panelList {
+  border-bottom: 1px solid rgba(2, 80, 111, 0.5960784314);
+  color: white;
+  padding: 0.8em;
+  font-size: 13px;
+}
+.panelContainer .panelList .two {
+  color: rgba(255, 255, 255, 0.63);
+}
+.panelContainer .panelList .three {
+  color: #00aaf1;
+}
+.panelContainer .panelButton {
+  background: none;
+  border: 2px solid #00aaf1;
+  width: 90%;
+  height: 2.5em;
+  border-radius: 18px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  bottom: -268px;
+  right: -15px;
+}
+.panelContainer .panelButton:hover {
+  background: #011f2b;
+  color: #00aaf1;
+}
+
+.panelIcons {
+  width: 20px;
+  margin-right: 1em;
+}
+
+.panelListName {
+  margin-right: 6.7em;
+}
+
+.arrow {
+  width: 13px;
+}
+
+.toggleButton {
+  width: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

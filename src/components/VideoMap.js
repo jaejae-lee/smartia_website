@@ -8,7 +8,7 @@ class VideoMap extends Component {
     constructor(props){
         super(props);
         this.state={
-            isShown: true,
+            isShown: false,
         }
     }
     toggleShowThumbnail =() =>{
@@ -27,6 +27,9 @@ class VideoMap extends Component {
             >
                 <img src={location} className="locationIcon IconOne" alt=""/>
             </button>
+            <img src={location} className="locationIcon IconTwo" alt=""/>
+            <img src={location} className="locationIcon IconThree" alt=""/>
+            <img src={location} className="locationIcon IconFour" alt=""/>
             { isShown ? 
             <div className="videoThumbnailContainer">
                 <p className="videoThumbnail">Video Thumbnail here</p>
@@ -36,10 +39,12 @@ class VideoMap extends Component {
                 <span className="zoneNumber">1</span>
                 <span className="zoneName">Machine zone</span><br/>
                 <span className="zoneNumber">2</span>
-                <span className="zoneName">Engineering room</span><br/>
+                <span className="zoneName">Engineering room A</span><br/>
                 <span className="zoneNumber">3</span>
-                <span className="zoneName">Main zone</span><br/>
+                <span className="zoneName">Engineering room B</span><br/>
                 <span className="zoneNumber">4</span>
+                <span className="zoneName">Main Zone</span><br/>
+                <span className="zoneNumber">5</span>
                 <span className="zoneName">Storage</span><br/>
             </section>
             </>

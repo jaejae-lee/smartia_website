@@ -4,6 +4,7 @@ import data2 from '../img/data2.png';
 import data3 from '../img/data3.png';
 import ExplorerVisual from './ExplorerVisual';
 import ExplorerPanelRight from './ExplorerPanelRight';
+import ExplorerPanelLeft from './ExplorerPanelLeft';
 
 class Data extends Component {
     state = {  }
@@ -14,7 +15,8 @@ class Data extends Component {
                 {/* <img src={data2} className="dataComp dataCompRight" alt="data page" /> */}
                 <ExplorerPanelRight/>
                 <ExplorerVisual/>
-                <img src={data3} className="dataComp dataCompLeft" alt="data page" /> 
+                <ExplorerPanelLeft/>
+                {/* <img src={data3} className="dataComp dataCompLeft" alt="data page" />  */}
             </section>
             <MainUIsSmall/>
             </>
