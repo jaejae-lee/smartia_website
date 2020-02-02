@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d652140977c8cc173ce812b94525f037",
+    "revision": "a843f85d0f6a2bda9c104749cbc7a39a",
     "url": "/smartia_website/index.html"
   },
   {
-    "revision": "d3048c929c4add926867",
-    "url": "/smartia_website/static/css/main.68a11ae7.chunk.css"
+    "revision": "9111e03a9fd213edca5c",
+    "url": "/smartia_website/static/css/main.359b18cc.chunk.css"
   },
   {
-    "revision": "8d5d22710f5d32f97fe3",
-    "url": "/smartia_website/static/js/2.34d97640.chunk.js"
+    "revision": "7b49a6af566fadec6656",
+    "url": "/smartia_website/static/js/2.583b464d.chunk.js"
   },
   {
     "revision": "44bb13c376a360a26522c8368cf779a1",
-    "url": "/smartia_website/static/js/2.34d97640.chunk.js.LICENSE"
+    "url": "/smartia_website/static/js/2.583b464d.chunk.js.LICENSE"
   },
   {
-    "revision": "d3048c929c4add926867",
-    "url": "/smartia_website/static/js/main.2ec9527e.chunk.js"
+    "revision": "9111e03a9fd213edca5c",
+    "url": "/smartia_website/static/js/main.036bc037.chunk.js"
   },
   {
     "revision": "d5282bda5a8341aaa0b0",
     "url": "/smartia_website/static/js/runtime-main.f6082e39.js"
   },
   {
+    "revision": "dea0e36a50a830ecb5396ea6b8575940",
+    "url": "/smartia_website/static/media/arrow.dea0e36a.svg"
+  },
+  {
     "revision": "7bb68c7e737b8d9562f7394774ca13a0",
     "url": "/smartia_website/static/media/chart.7bb68c7e.svg"
+  },
+  {
+    "revision": "0f500b50d9667dbbb7c1af26ab611116",
+    "url": "/smartia_website/static/media/data.0f500b50.svg"
   },
   {
     "revision": "5a0b3a4344da53fa31eff1cd47b211a1",
@@ -52,8 +60,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartia_website/static/media/data4.83571f67.svg"
   },
   {
+    "revision": "17156a65d581def6916f1313f9e6eb12",
+    "url": "/smartia_website/static/media/data6.17156a65.svg"
+  },
+  {
+    "revision": "bdc266b6736fb2f2027b81a2b9dc77b4",
+    "url": "/smartia_website/static/media/data7.bdc266b6.svg"
+  },
+  {
     "revision": "6ec773f33a93e6bf96041de79979eaf1",
     "url": "/smartia_website/static/media/dataIcon.6ec773f3.svg"
+  },
+  {
+    "revision": "084e3c7998ef1d53cb0615be9ffdc96c",
+    "url": "/smartia_website/static/media/factory.084e3c79.svg"
   },
   {
     "revision": "bc64ac1b612e43f9285a939fc3b659c4",
@@ -70,6 +90,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c7337bff725d346d6e9b837d493703d7",
     "url": "/smartia_website/static/media/floorPlan3.c7337bff.jpg"
+  },
+  {
+    "revision": "b6e7fb5652600eb88b7f9a67d1fd4a15",
+    "url": "/smartia_website/static/media/full.b6e7fb56.svg"
+  },
+  {
+    "revision": "507567fcf0e6c67d6861a0bc21bac8c0",
+    "url": "/smartia_website/static/media/half.507567fc.svg"
   },
   {
     "revision": "80e53cced5598fdcfb5b143c0c249600",
@@ -100,8 +128,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartia_website/static/media/image.3b6a8048.svg"
   },
   {
-    "revision": "647b23e62de87fd2d6376c8cf748add6",
-    "url": "/smartia_website/static/media/location.647b23e6.svg"
+    "revision": "8a1553d7b73f9fcbbfa16df92827b36e",
+    "url": "/smartia_website/static/media/location.8a1553d7.svg"
   },
   {
     "revision": "1481afe5de6d1ecec32d0bbd4227f5c9",
@@ -112,8 +140,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartia_website/static/media/logo.31eecee2.png"
   },
   {
+    "revision": "6a203ac72a89d48d174526ffbb0d20ba",
+    "url": "/smartia_website/static/media/machine.6a203ac7.svg"
+  },
+  {
+    "revision": "cee305e1c39f57d2efc96977d262ad7c",
+    "url": "/smartia_website/static/media/map.cee305e1.svg"
+  },
+  {
     "revision": "2eb2bd447bb58f431e310b48b43b000f",
     "url": "/smartia_website/static/media/searchIcon.2eb2bd44.svg"
+  },
+  {
+    "revision": "ff224abdff01d24d2e04654d881439cb",
+    "url": "/smartia_website/static/media/sensor.ff224abd.svg"
+  },
+  {
+    "revision": "41d57951094dfa45f8f82de37b8662cc",
+    "url": "/smartia_website/static/media/split.41d57951.svg"
   },
   {
     "revision": "adfb688c072f61d3b7bceec5ffb3de68",
