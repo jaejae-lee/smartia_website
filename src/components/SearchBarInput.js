@@ -17,14 +17,17 @@ import searchIcon from '../img/searchIcon.svg';
     render() {
       return (
           <>
-          <img src={searchIcon} className="searchIcon" alt="search icon" /> 
-          <input type="input" className="searchBar" placeholder="Search here" 
-                 value={this.props.inputValue}
-                 onChange={this.props.onChange} />
-          <Motion defaultStyle={{x: 0}} style={{x: spring(this.props.open ? 0 : 1, presets.stiff)}} >
-            {interp => <span className="nav__notification__num" style={{transform: `translateZ(0) scale(${interp.x}`, opacity: interp.x}}></span>}
-          </Motion>
-            <SearchResultBar open={this.props.open}/>
+          {/* <img src={searchIcon} className="searchIcon" alt="search icon" />  */}
+          <div className="home_searchBarContainer">
+            <img src={searchIcon} className="searchIcon" alt="search icon" /> 
+            <input type="input" className="searchBar" placeholder="Search here" 
+                  value={this.props.inputValue}
+                  onChange={this.props.onChange} />
+            <Motion defaultStyle={{x: 0}} style={{x: spring(this.props.open ? 0 : 1, presets.stiff)}} >
+              {interp => <span className="nav__notification__num" style={{transform: `translateZ(0) scale(${interp.x}`, opacity: interp.x}}></span>}
+            </Motion>
+              <SearchResultBar open={this.props.open}/>
+          </div>
           </> 
       )
     }

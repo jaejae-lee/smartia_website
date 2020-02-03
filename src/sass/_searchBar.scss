@@ -1,3 +1,7 @@
+.notiContainerNew{
+    position: inherit;
+}
+
 .searchBarContainer{
     width: 40%;
     margin: 0 auto;
@@ -28,11 +32,9 @@
 }
 
 .searchBarInputContainer{
-    margin-left: 33em;
-    margin-right: 33em;
-    width: 35%;
-    margin-top: 5em;
-    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
     .searchBar{
         width: 100%;
         margin: 0 auto;
@@ -47,9 +49,13 @@
     }
     .searchIcon{
         width: 1.5em;
-        position: absolute;
-        top: 0;
+        position: relative;
+        top: 33px;
+        right: -7px;
         opacity: 0.5;
-        margin: 0.5em;
     }
+}
+.home_searchBarContainer{
+    width: 60%;
+    margin: auto;
 }

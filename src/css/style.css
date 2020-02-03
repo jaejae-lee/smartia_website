@@ -52,7 +52,7 @@ body {
   align-items: center;
   margin: auto;
   width: 80%;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 .buttonGroup .dataIcon {
   width: 70%;
@@ -151,11 +151,11 @@ body {
   margin: 10px 10px 10px 20px;
 }
 .nav .logOutContainer {
-  margin-right: 5em;
+  margin-right: 2em;
 }
 .nav .logOutContainer .dataIconHeader {
-  width: 50px;
-  margin-right: 3em;
+  width: 45px;
+  margin-right: 0.4em;
 }
 .nav .logOutContainer .dataIconHeaderNoti {
   width: 39px;
@@ -163,22 +163,58 @@ body {
   cursor: pointer;
 }
 .nav .logOutContainer .iconLogout {
-  width: 2.5em;
-  margin-right: 15px;
+  width: 35px;
+  margin: 0 1em;
   cursor: pointer;
+}
+.nav .logOutContainer .Iconone {
+  margin-right: 4em;
+}
+
+.navIconNumber {
+  width: 39px;
+  height: 29px;
+  border-radius: 20px;
+  border: 2.5px solid #00aaf1;
+  color: white;
+  text-align: center;
+}
+
+.navIconname {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background: #00a9f194;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.navIconnameText {
+  color: #00aaf1;
+  font-weight: bold;
+  margin: 0 1em;
+}
+
+.navIconLine {
+  width: 1px;
+  height: 2em;
+  border-right: 1.5px solid #00a9f194;
+  margin: 0 2em;
 }
 
 .notiContainer {
-  margin-left: 83%;
-  margin-top: 1.5rem;
   position: fixed;
   z-index: 1;
+  top: 22px;
+  right: 409px;
 }
 
 .nav__notification {
   position: relative;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 53px;
 }
 
 .nav__notification__icon {
@@ -327,6 +363,10 @@ body {
   width: 2.5em;
 }
 
+.notiContainerNew {
+  position: inherit;
+}
+
 .searchBarContainer {
   width: 40%;
   margin: 0 auto;
@@ -357,11 +397,9 @@ body {
 }
 
 .searchBarInputContainer {
-  margin-left: 33em;
-  margin-right: 33em;
-  width: 35%;
-  margin-top: 5em;
-  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+  margin-top: 2em;
 }
 .searchBarInputContainer .searchBar {
   width: 100%;
@@ -377,10 +415,15 @@ body {
 }
 .searchBarInputContainer .searchIcon {
   width: 1.5em;
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: 33px;
+  right: -7px;
   opacity: 0.5;
-  margin: 0.5em;
+}
+
+.home_searchBarContainer {
+  width: 60%;
+  margin: auto;
 }
 
 .visualContainer {

@@ -8,24 +8,53 @@
     margin: 10px 10px 10px 20px;
   }
   .logOutContainer{
-    margin-right: 5em;
+    margin-right: 2em;
     .dataIconHeader{
-      width: 50px;
-      margin-right: 3em;
+      width: 45px;
+      margin-right: 0.4em;
     }
     .dataIconHeaderNoti{
       width: 39px; height: 28px;
-      // text-align: center;
-      // padding-top: 5px;
-      // border-radius: 40px;
-      // border: 2px solid $mainLight;
-      // color: $white;
       cursor: pointer;
     }
     .iconLogout{
-      width: 2.5em;
-      margin-right: 15px;
+      width: 35px;
+      margin: 0 1em;
       cursor: pointer;
     }
+    .Iconone{
+      margin-right: 4em;
+
+    }
   }
+}
+
+.navIconNumber{
+  width: 39px;
+  height: 29px;
+  border-radius: 20px;
+  border: 2.5px solid $mainLight;
+  color: white;
+  text-align: center;
+}
+.navIconname{
+  width: 40px; height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background: $mainLightA;
+  color: $white;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 1em;
+}
+.navIconnameText{
+  color: $mainLight;
+  font-weight: bold;
+  margin: 0 1em;
+} 
+.navIconLine{
+  width:1px;
+  height: 2em;
+  border-right: 1.5px solid $mainLightA;
+  margin: 0 2em;
 }

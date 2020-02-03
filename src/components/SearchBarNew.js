@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SearchBarInput from './SearchBarInput';
+import searchIcon from '../img/searchIcon.svg';
   
   class SearchBarNew extends Component {
     constructor(props) {
@@ -24,14 +25,14 @@ import SearchBarInput from './SearchBarInput';
     }
     render() {
       return (
-        <div className="notiContainer disable-select searchBarInputContainer flex" 
-             tabIndex="0" 
-             onBlur={ this.closeNotificationsBar }>
+          <div className="notiContainer notiContainerNew disable-select searchBarInputContainer flex" 
+              tabIndex="0" 
+              onBlur={ this.closeNotificationsBar }>
           <SearchBarInput toggleNotificationsBar={this.toggleNotificationsBar} 
-                          open={this.state.inputValue}
-                          inputValue={this.state.inputValue}
-                          onChange={this.handleInput}/>
-        </div>
+                            open={this.state.inputValue}
+                            inputValue={this.state.inputValue}
+                            onChange={this.handleInput}/>
+          </div>
       )
     }
   }

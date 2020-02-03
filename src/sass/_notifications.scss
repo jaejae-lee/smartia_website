@@ -9,16 +9,15 @@ $clr-a300: #e74c3c;
 $trans: cubic-bezier(0.3,0,0.7,1);
 
 .notiContainer {
-  margin-left: 83%;
-  margin-top: 1.5rem;
   position: fixed;
   z-index: 1;
+  top: 22px;
+  right: 409px;
 }
 
 .nav__notification {
   position: relative;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 53px;
 }
 
 .nav__notification__icon {

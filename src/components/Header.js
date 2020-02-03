@@ -13,10 +13,12 @@ function Header() {
             <nav className="nav flex">
                 <img src={logo} className="logo" alt="logo"/>
                 <span className="logOutContainer flex">
-                    <img src={dataIcon} className="dataIcon dataIconHeader" alt="button for data page" />
-                    {/* <span className="dataIconHeaderNoti"></span> */}
+                    <img src={dataIcon} className="dataIcon dataIconHeader Iconone" alt="button for data page" />
                     <img src={icon4} className="dataIcon dataIconHeader" alt="button for data page" />
-                    {/* <span className="dataIconHeaderNoti">21</span> */}
+                    <div className="dataIcon navIconNumber">4</div>
+                    <div className="dataIcon navIconLine"></div>
+                    <div className="navIconname">M</div>
+                    <div className="navIconnameText">MAURO</div>
                     <img src={logOut} className="dataIcon dataIconHeader iconLogout" alt="button for log out" />
                 </span>
             </nav>
