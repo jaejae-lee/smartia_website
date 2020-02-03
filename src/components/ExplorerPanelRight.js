@@ -19,40 +19,43 @@ class ExplorerPanelRight extends Component {
     render() { 
         return ( 
             <section className="panelContainer">
-                <div className="panelHeader">Asset Control</div>
+                <div className="panelHeader"><span>Asset</span> Control</div>
                 <div className="panelBody">
                     <div className="panelList one">
                     <img src={factory} className="panelIcons"alt=""/>
                     <span className="panelListName">Factory Name</span>
-                    <img src={arrow} className="arrow"alt=""/>
+                    <img src={arrow} className="arrow down"alt=""/>
                     </div>
                    
                     <div className="panelList two">
                     <img src={machine} className="panelIcons"alt=""/>
-                    <span className="panelListName">Machine Title</span>
-                    <img src={arrow} className="arrow"alt=""/>
+                    <span className="panelListName opacity">Machine Title</span>
+                    <img src={arrow} className="arrow up" alt=""/>
                     </div>
                     
                     <div className="panelList three">
                     <img src={machine} className="panelIcons"alt=""/>
-                    <span className="panelListName">Machine Title</span>
-                    <img src={arrow} className="arrow"alt=""/>
+                    <span className="panelListName Textblue">Machine Title</span>
+                    <img src={arrow} className="arrow down"alt=""/>
                     </div>
 
-                    <div className="panelList sensorTitle five">
-                    <img src={sensor} className="panelIcons"alt=""/>Sensor Title
+                    <div className="panelList sensorTitle five flex">
+                    <img src={sensor} className="panelIcons"alt=""/>
+                    <span className="sensorTitleText Textblue">Sensor Title</span>
                     <Switch className="toggleButton"
                             onChange={this.handleChange} 
                             checked={this.state.checked} />
                     </div>
-                    <div className="panelList sensorTitle five">
-                    <img src={sensor} className="panelIcons"alt=""/>Sensor Title
+                    <div className="panelList sensorTitle five flex">
+                    <img src={sensor} className="panelIcons"alt=""/>
+                    <span className="sensorTitleText Textblue">Sensor Title</span>
                     <Switch className="toggleButton"
                             onChange={this.handleChange} 
                             checked={this.state.checked} />
                     </div>
-                    <div className="panelList sensorTitle five">
-                    <img src={sensor} className="panelIcons"alt=""/>Sensor Title
+                    <div className="panelList sensorTitle five flex opacity">
+                    <img src={sensor} className="panelIcons"alt=""/>
+                    <span className="sensorTitleText">Sensor Title</span>
                     <Switch className="toggleButton"
                             onChange={this.handleChange} 
                             checked={this.state.checked} />

@@ -564,6 +564,10 @@ body {
   right: -7em;
 }
 
+.dataContainer {
+  position: absolute;
+  top: 0;
+}
 .dataContainer .dataOnVideo {
   width: 10em;
   position: absolute;
@@ -573,12 +577,12 @@ body {
   left: 618px;
   width: 220px;
   opacity: 0.8;
+  z-index: 1;
 }
 .dataContainer .dataTwo {
   width: 118px;
   top: 348px;
   left: 527px;
-  z-index: 1;
 }
 .dataContainer .dataThree {
   display: none;
@@ -592,11 +596,11 @@ body {
   width: 122px;
 }
 .dataContainer .dataSix {
-  bottom: -46px;
+  bottom: 184px;
   right: 364px;
 }
 .dataContainer .dataSeven {
-  bottom: 60px;
+  bottom: 288px;
   right: 415px;
 }
 
@@ -604,9 +608,11 @@ body {
   width: 51%;
   height: 52%;
   position: relative;
-  top: -19em;
+  top: -22em;
   right: 1em;
-  color: white;
+}
+.chartOnVideo canvas {
+  background: none;
 }
 
 .chart {
@@ -637,13 +643,18 @@ canvas {
 .panelContainer .panelHeader {
   background: rgba(57, 57, 73, 0.74);
   width: 100%;
-  height: 4em;
+  height: 4.6em;
   border-bottom: 2px solid rgba(2, 80, 111, 0.5960784314);
   color: white;
-  padding: 1em;
+  padding: 1.6em;
+  font-size: 14px;
+}
+.panelContainer .panelHeader span {
+  font-weight: bold;
 }
 .panelContainer .panelBody {
   padding: 1em;
+  font-weight: bold;
 }
 .panelContainer .panelList {
   border-bottom: 1px solid rgba(2, 80, 111, 0.5960784314);
@@ -657,17 +668,24 @@ canvas {
 .panelContainer .panelList .three {
   color: #00aaf1;
 }
+.panelContainer .sensorTitle {
+  margin-left: 5em;
+  justify-content: flex-start;
+}
+.panelContainer .sensorTitleText {
+  margin-right: 2em;
+}
 .panelContainer .panelButton {
   background: none;
   border: 2px solid #00aaf1;
-  width: 90%;
+  width: 82%;
   height: 2.5em;
   border-radius: 18px;
   color: white;
   font-weight: bold;
   position: relative;
-  bottom: -268px;
-  right: -15px;
+  Bottom: 137px;
+  right: -31px;
 }
 .panelContainer .panelButton:hover {
   background: #011f2b;
@@ -680,15 +698,98 @@ canvas {
 }
 
 .panelListName {
-  margin-right: 6.7em;
+  margin-right: 8.7em;
 }
 
 .arrow {
   width: 13px;
 }
 
+.up {
+  opacity: 0.4;
+}
+
+.down {
+  transform: rotate(90deg);
+}
+
+.opacity {
+  opacity: 0.3;
+}
+
+.Textblue {
+  color: #00aaf1;
+}
+
 .toggleButton {
   width: 10px;
+}
+
+.panelBody {
+  height: 100%;
+}
+
+.panelTop, .panelBottom {
+  border: 1px solid #00a9f194;
+  margin-bottom: 1.5em;
+}
+
+.panelTopHeader {
+  color: white;
+  background: rgba(57, 57, 73, 0.74);
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 17px;
+}
+
+.panelWcheckBox p {
+  margin: 0;
+}
+.panelWcheckBox .dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: #ff9300;
+}
+
+.panelBottom .dot {
+  background: transparent;
+}
+
+.panelBody .title {
+  margin-bottom: 0;
+}
+.panelBody .detail {
+  color: white;
+  font-weight: 200;
+}
+.panelBody .input-group-text {
+  background: none;
+  border: none;
+  position: relative;
+  height: 100%;
+}
+
+.panelSearchBarContainer {
+  justify-content: center;
+  justify-content: center;
+  border-bottom: 2px solid rgba(2, 80, 111, 0.5960784314);
+  padding: 1em 0;
+}
+.panelSearchBarContainer .panelSearchBar {
+  color: white;
+  font-size: 12px;
+  padding: 0.5em 1em;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.372);
+  width: 80%;
+  border: none;
+}
+.panelSearchBarContainer .searchIconSmall {
+  width: 13px;
+  position: relative;
+  right: -25px;
 }
 
 /*# sourceMappingURL=style.css.map */
