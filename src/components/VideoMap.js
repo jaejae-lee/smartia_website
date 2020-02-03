@@ -8,7 +8,7 @@ class VideoMap extends Component {
     constructor(props){
         super(props);
         this.state={
-            isShown: false,
+            isShown: true,
         }
     }
     toggleShowThumbnail =() =>{
@@ -25,7 +25,7 @@ class VideoMap extends Component {
                     onMouseOut={ this.toggleShowThumbnail }
                     onClick={ this.props.onClick }
             >
-                <img src={location} className="locationIcon IconOne" alt=""/>
+                <img src={location} className="locationIcon IconOne locationIconSVG" alt=""/>
             </button>
             <img src={location} className="locationIcon IconTwo" alt=""/>
             <img src={location} className="locationIcon IconThree" alt=""/>

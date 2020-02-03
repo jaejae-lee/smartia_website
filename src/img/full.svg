@@ -2,9 +2,8 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="895.875px" height="814px" viewBox="0 106.5 895.875 814" enable-background="new 0 106.5 895.875 814"
-	 xml:space="preserve">
-<path fill="#00AAF1" d="M128,768h639.875V256H128V768z M255.938,384h384v256h-384V384L255.938,384z M64,192.062h191.938v-64H0V384
-	h64V192.062z M64,640H0v255.938h255.938V832H64V640z M639.938,128.062v64h191.938V384h64V128.062H639.938z M831.875,832H639.938
-	v63.938h255.938V640h-64L831.875,832L831.875,832z"/>
+	 width="895.875px" height="814px" viewBox="0 0 895.875 814" enable-background="new 0 0 895.875 814" xml:space="preserve">
+<path fill="#011F2B" d="M128,663h639.875V151H128V663z M255.938,279h384v256h-384V279L255.938,279z M64,87.062h191.938v-64H0V279h64
+	V87.062z M64,535H0v255.938h255.938V727H64V535z M639.938,23.062v64h191.938V279h64V23.062H639.938z M831.875,727H639.938v63.938
+	h255.938V535h-64L831.875,727L831.875,727z"/>
 </svg>

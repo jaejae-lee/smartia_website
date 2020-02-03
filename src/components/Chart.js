@@ -9,7 +9,13 @@ const chartColors = {
 	green: 'rgb(75, 192, 192)',
 	blue: 'rgb(54, 162, 235)',
 	purple: 'rgb(153, 102, 255)',
-	grey: 'rgb(201, 203, 207)'
+    grey: 'rgb(201, 203, 207)',
+    UIColorOne: '#ff9300',
+    UIColorTwo: '#00b5ff',
+    UIColorThree: '#00ffb2',
+    UIColorFour: '#fc478f',
+    UIColorFive: '#ffffff',
+    UIColorSix: '#e5d500',
 };
 
 
@@ -133,41 +139,75 @@ var Samples = global.Samples || (global.Samples = {});
 
 const data = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    datasets: [{
-        label: 'My First dataset',
-        backgroundColor: chartColors.red,
-        borderColor: chartColors.red,
-        data: [
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor()
-        ],
-        fill: false,
-    }, {
-        label: 'My Second dataset',
-        fill: false,
-        backgroundColor: chartColors.blue,
-        borderColor: chartColors.blue,
-        data: [
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor()
-        ],
-    }]
+    datasets: [
+        {
+            label: 'First dataset',
+            fill: true,
+            backgroundColor: chartColors.UIColorOne,
+            borderColor: chartColors.UIColorOne,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+            
+            ],
+        }, 
+        {
+            label: 'Second dataset',
+            fill: true,
+            backgroundColor: chartColors.UIColorTwo,
+            borderColor: chartColors.UIColorTwo,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+        },
+        {
+            label: 'Third dataset',
+            fill: true,
+            backgroundColor: chartColors.UIColorThree,
+            borderColor: chartColors.UIColorThree,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+        },{
+            label: 'Fourth dataset',
+            fill: true,
+            backgroundColor: chartColors.UIColorFour,
+            borderColor: chartColors.UIColorFour,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+        }
+    ]
 };
 
 const options = {
     responsive: true,
         title: {
-            display: true,
+            display: false,
             text: 'Chart.js Line Chart'
         },
         tooltips: {

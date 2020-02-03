@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import videoGif from '../img/videoGif.gif';
 import video2 from '../img/video2.gif';
 import chart from '../img/chart.svg';
 import table from '../img/table.svg';
@@ -84,14 +85,14 @@ class ExplorerVisual extends Component {
                         <button className="videoButton buttonVideoSplit"
                                 onClick={this.showSplit}>
                                 <img src={split} className="videoButtonIcon" alt=""/>
+                        </button> 
+                        <button className="videoButton buttonShowData"
+                                onClick={this.showHalf}>
+                                <img src={half} className="videoButtonIcon" alt=""/>
                         </button>
                         <button className="videoButton buttonShowData"
                                 onClick={this.showData}>
                                 <img src={data} className="videoButtonIcon" alt=""/>
-                        </button>
-                        <button className="videoButton buttonShowData"
-                                onClick={this.showHalf}>
-                                <img src={half} className="videoButtonIcon" alt=""/>
                         </button>
                     </div>
                     {/* <ExplorerVisualButtons /> */}
@@ -100,13 +101,25 @@ class ExplorerVisual extends Component {
                 : isVideo && showSplit ?
                 <>
                 <section className="splitImageContainer">
-                    <div className="splitImageContainerTop">
-                        <img src={factory} className="splitImage"/> 
-                        <img src={factory} className="splitImage"/> 
+                    <div className="splitImageContainerTop flex">
+                        <div>
+                            <p>Machine room</p>
+                            <img src={factory} className="splitImage"/>
+                        </div>
+                        <div>
+                            <p>Engineering room</p> 
+                            <img src={factory} className="splitImage"/> 
+                        </div>
                     </div>
-                    <div className="splitImageContainerBottom">
-                        <img src={factory} className="splitImage"/> 
-                        <img src={factory} className="splitImage"/> 
+                    <div className="splitImageContainerBottom flex">
+                        <div>
+                            <p>Manufacturing room</p>
+                            <img src={factory} className="splitImage"/> 
+                            </div>
+                        <div>
+                            <p>Machine room</p>
+                            <img src={factory} className="splitImage"/> 
+                        </div>
                     </div>
                 </section>
                 <div className="videoButtonContainer flex">
@@ -127,7 +140,7 @@ class ExplorerVisual extends Component {
                 : isVideo && showHalf ?
                 <>
                 <section className="halfImageContainer flex">
-                    <img src={factory} className="halfImage"/>
+                    <img src={videoGif} className="halfImage"/>
                 </section>
                 <section className="halfChart">
                     <Chart/>

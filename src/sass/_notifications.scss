@@ -9,10 +9,10 @@ $clr-a300: #e74c3c;
 $trans: cubic-bezier(0.3,0,0.7,1);
 
 .notiContainer {
-  position: fixed;
+  position: relative;
   z-index: 1;
-  top: 22px;
-  right: 409px;
+  top: 22.5px;
+  left: 71.2em;
 }
 
 .nav__notification {
@@ -81,9 +81,9 @@ $trans: cubic-bezier(0.3,0,0.7,1);
 
 .nav__notification_bar {
   contain: layout;
-  position: relative;
-  top: 3em;
-  right: 8em;
+  position: fixed;
+  top: 4em;
+  right: 23em;
   width: 15vw;
   background: rgba(255, 255, 255, 0.644);
   transform: translate(1rem, 0.5rem);

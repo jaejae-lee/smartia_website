@@ -40,9 +40,9 @@ class ExplorerVisualButtons extends Component {
                 <button className="videoButton buttonVideoSplit"
                         onClick={this.showSplit}>Split</button>
                 <button className="videoButton buttonShowData"
-                        onClick={this.showData}>Data</button>
-                <button className="videoButton buttonShowData"
                         onClick={this.showHalf}>Half</button>
+                <button className="videoButton buttonShowData"
+                        onClick={this.showData}>Data</button>
             </div>
         );
     }

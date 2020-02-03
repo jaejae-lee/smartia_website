@@ -15,26 +15,26 @@ class ExplorerPanelLeft extends Component {
                         <div className="panelList one panelWcheckBox flex">
                             <InputGroup.Checkbox className="panelCheckBox" aria-label="Checkbox for following text input"/>
                             <div>
-                                <p className="title">Active Matrics Title Here</p>
+                                <p className="title titleOne">Active Matrics Title Here</p>
                                 <p className="detail">Additional details here</p>
                             </div>
-                            <span className="dot"></span>
+                            <span className="dot titleOneDot"></span>
                         </div>
                         <div className="panelList one panelWcheckBox flex">
                             <InputGroup.Checkbox className="panelCheckBox" aria-label="Checkbox for following text input"/>
                             <div>
-                                <p className="title">Active Matrics Title Here</p>
+                                <p className="title titleTwo">Active Matrics Title Here</p>
                                 <p className="detail">Additional details here</p>
                             </div>
-                            <span className="dot"></span>
+                            <span className="dot titleTwoDot"></span>
                         </div>
                         <div className="panelList one panelWcheckBox flex">
                             <InputGroup.Checkbox className="panelCheckBox" aria-label="Checkbox for following text input"/>
                             <div>
-                                <p className="title">Active Matrics Title Here</p>
+                                <p className="title titleThree">Active Matrics Title Here</p>
                                 <p className="detail">Additional details here</p>
                             </div>
-                            <span className="dot"></span>
+                            <span className="dot titleThreeDot"></span>
                         </div>
                     </div>
     
@@ -44,34 +44,34 @@ class ExplorerPanelLeft extends Component {
                             <img src={searchIcon} className="searchIcon searchIconSmall" alt="search icon"/> 
                             <input className="panelSearchBar"/>
                         </div>
-                        <div className="panelList one panelWcheckBox flex">
+                        <div className="panelList one panelWcheckBox flex inActive">
                             <InputGroup.Checkbox className="panelCheckBox" aria-label="Checkbox for following text input"/>
                             <div>
-                                <p className="title">Active Matrics Title Here</p>
+                                <p className="title">Inactive Matrics Title Here</p>
                                 <p className="detail">Additional details here</p>
                             </div>
                             <span className="dot"></span>
                         </div>
-                        <div className="panelList one panelWcheckBox flex">
+                        <div className="panelList one panelWcheckBox flex inActive">
                             <InputGroup.Checkbox className="panelCheckBox" aria-label="Checkbox for following text input"/>
                             <div>
-                                <p className="title">Active Matrics Title Here</p>
+                                <p className="title">Inactive Matrics Title Here</p>
                                 <p className="detail">Additional details here</p>
                             </div>
                             <span className="dot"></span>
                         </div>
-                        <div className="panelList one panelWcheckBox flex">
+                        <div className="panelList one panelWcheckBox flex inActive">
                             <InputGroup.Checkbox className="panelCheckBox" aria-label="Checkbox for following text input"/>
                             <div>
-                                <p className="title">Active Matrics Title Here</p>
+                                <p className="title">Inactive Matrics Title Here</p>
                                 <p className="detail">Additional details here</p>
                             </div>
                             <span className="dot"></span>
                         </div>
-                        <div className="panelList one panelWcheckBox flex">
+                        <div className="panelList one panelWcheckBox flex inActive">
                             <InputGroup.Checkbox className="panelCheckBox" aria-label="Checkbox for following text input"/>
                             <div>
-                                <p className="title">Active Matrics Title Here</p>
+                                <p className="title">Inactive Matrics Title Here</p>
                                 <p className="detail">Additional details here</p>
                             </div>
                             <span className="dot"></span>

@@ -2,20 +2,19 @@
     position: absolute;
     top:0;
     .dataOnVideo{
+        position: absolute;
         width: 10em;
-        position: absolute; 
     }
     .dataOne{
-        top: 220px;
-        left: 618px;
-        width: 220px;
-        opacity: 0.8;
+        top: 267px;
+        left: 257px;
+        width: 149px;
         z-index: 1;
     }
     .dataTwo{
         width: 118px;
-        top: 348px;
-        left: 527px;
+        top: 359px;
+        left: 145px;
     }
     .dataThree{
         display: none;
@@ -25,16 +24,18 @@
     }
     .dataFive{
         top: 220px;
-        left: 526px;
+        left: 139px;
         width: 122px;
+        opacity: 0.7;
     }
     .dataSix{
-        bottom: 184px;
-        right: 364px;
+        bottom: -10em;
+        right: -57em;
     }
     .dataSeven{
-        bottom: 288px;
-        right: 415px;
+        bottom: -10em;
+        right: -48em;
+        width: 124px;
     }
 }
 .chartOnVideo{

@@ -42,6 +42,7 @@
         .video{
             width: 100%;
             height: 41rem;
+            filter: brightness(0.6);
         }
         .chart{ 
             width: 93%;
@@ -53,21 +54,25 @@
 //buttons
 .videoButtonContainer{
     position: absolute;
-    top: 12em;
-    right: 23em;
+    top: 11em;
+    right: 22em;
     display: block;
 }
 .videoButton{
-    background: none;
+    background: $whiteA;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
     border: none;
     display: block;
-    margin-bottom:2em;
+    margin-bottom: 7px;
+    &:hover{
+        background: $mainLight;
+        //background: $UIColorFour;
+    }
 }
 .videoButtonIcon{
-    width: 30px; height: 30px;
-    &:hover{
-        fill:red;
-    }
+    width: 25px; height: 25px;
 }
 
 //Map
@@ -81,30 +86,36 @@
         outline: none;
     }
     .locationIcon{
-        top: -32em;
-        right: -16em;
-        width: 58px;
-        position: relative;
+        top: 24em;
+        right: 63em;
+        width: 50px;
+        position: absolute;
     }
+    // .locationIconSVG:hover{
+    //     fill: red;
+    // }
 }
+// .locationIconSVG{
+//     fill: red;
+// }
 
 .IconTwo{
-    top: -20em;
-    right: -20em;
-    width: 58px;
-    position: relative;
+    top: 14em;
+    right: 53em;
+    width: 50px;
+    position: absolute;
 }
 .IconThree{
-    top: -38em;
-    right: -16em;
-    width: 58px;
-    position: relative;
+    top: 16em;
+    right: 32em;
+    width: 50px;
+    position: absolute;
 }
 .IconFour{
-    top: -32em;
-    right: -20em;
-    width: 58px;
-    position: relative;
+    top: 34em;
+    right: 49em;
+    width: 50px;
+    position: absolute;
 }
 
 .zones{
@@ -131,19 +142,19 @@
 }
 
 .videoThumbnailContainer{
-    position: relative;
+    position: absolute;
     width: 17em;
-    background-color: $mainDark;
-    top: -47em;
-    right: -21em;
-    height: 12em;
+    background-color: #011f2b;
+    top: 16em;
+    right: 46em;
+    height: 11em;
     padding: 2em;
     .videoThumbnail{
-        color: $whiteA;
-        line-height: 1em;
-        font-size: 1.5em;
+        color: rgba(255, 255, 255, 0.372);
+        font-size: 1.3em;
         font-style: italic;
         text-align: center;
+        line-height: 5em;
     }
 }
 
@@ -153,29 +164,35 @@
     .splitImageContainerTop{
         width: 100%;
         margin: 19px;
+        margin-bottom: 0;
     }
     .splitImageContainerBottom{
         width: 100%;
         margin: 19px;
+        margin-top: 0;
     }
     .splitImage{
-        width: 46%;
-        margin: 0.5em;
         border: 5px solid $whiteA;
+        width: 92%;
+        margin: 0.5em 0;
     }
-}
-.halfImage{
-    width: 50px;
+    p{
+        margin:0;
+        font-size: 12px;
+    }
 }
 
 //Half Images
 .halfImage{
-    width: 99%;
-    height: 20em;
+    // width: 99%;
+    // height: 20em;
+    width: 60%;
+    height: 37em;
+    //z-index: 1;
 }
 .halfChart{
-    width: 76%;
-    position: relative;
-    top: -6.5em;
-    right: -7em;
+    width: 60%;
+    position: absolute;
+    top: 11em;
+    right: 0em;
 }

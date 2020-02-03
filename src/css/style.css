@@ -52,7 +52,7 @@ body {
   align-items: center;
   margin: auto;
   width: 80%;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 .buttonGroup .dataIcon {
   width: 70%;
@@ -206,10 +206,10 @@ body {
 }
 
 .notiContainer {
-  position: fixed;
+  position: relative;
   z-index: 1;
-  top: 22px;
-  right: 409px;
+  top: 22.5px;
+  left: 71.2em;
 }
 
 .nav__notification {
@@ -267,9 +267,9 @@ body {
 }
 .nav__notification_bar {
   contain: layout;
-  position: relative;
-  top: 3em;
-  right: 8em;
+  position: fixed;
+  top: 4em;
+  right: 23em;
   width: 15vw;
   background: rgba(255, 255, 255, 0.644);
   transform: translate(1rem, 0.5rem);
@@ -370,7 +370,7 @@ body {
 .searchBarContainer {
   width: 40%;
   margin: 0 auto;
-  margin-top: 5em;
+  margin-top: 4%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.705);
 }
 .searchBarContainer .searchBar {
@@ -399,7 +399,7 @@ body {
 .searchBarInputContainer {
   width: 50%;
   margin: auto;
-  margin-top: 2em;
+  margin-top: 4%;
 }
 .searchBarInputContainer .searchBar {
   width: 100%;
@@ -471,6 +471,7 @@ body {
 .visualContainer .visualContainerBody .video {
   width: 100%;
   height: 41rem;
+  filter: brightness(0.6);
 }
 .visualContainer .visualContainerBody .chart {
   width: 93%;
@@ -479,24 +480,27 @@ body {
 
 .videoButtonContainer {
   position: absolute;
-  top: 12em;
-  right: 23em;
+  top: 11em;
+  right: 22em;
   display: block;
 }
 
 .videoButton {
-  background: none;
+  background: rgba(255, 255, 255, 0.372);
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
   border: none;
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 7px;
+}
+.videoButton:hover {
+  background: #00aaf1;
 }
 
 .videoButtonIcon {
-  width: 30px;
-  height: 30px;
-}
-.videoButtonIcon:hover {
-  fill: red;
+  width: 25px;
+  height: 25px;
 }
 
 .locationButton {
@@ -507,31 +511,31 @@ body {
   outline: none;
 }
 .locationButton .locationIcon {
-  top: -32em;
-  right: -16em;
-  width: 58px;
-  position: relative;
+  top: 24em;
+  right: 63em;
+  width: 50px;
+  position: absolute;
 }
 
 .IconTwo {
-  top: -20em;
-  right: -20em;
-  width: 58px;
-  position: relative;
+  top: 14em;
+  right: 53em;
+  width: 50px;
+  position: absolute;
 }
 
 .IconThree {
-  top: -38em;
-  right: -16em;
-  width: 58px;
-  position: relative;
+  top: 16em;
+  right: 32em;
+  width: 50px;
+  position: absolute;
 }
 
 .IconFour {
-  top: -32em;
-  right: -20em;
-  width: 58px;
-  position: relative;
+  top: 34em;
+  right: 49em;
+  width: 50px;
+  position: absolute;
 }
 
 .zones {
@@ -558,20 +562,20 @@ body {
 }
 
 .videoThumbnailContainer {
-  position: relative;
+  position: absolute;
   width: 17em;
   background-color: #011f2b;
-  top: -47em;
-  right: -21em;
-  height: 12em;
+  top: 16em;
+  right: 46em;
+  height: 11em;
   padding: 2em;
 }
 .videoThumbnailContainer .videoThumbnail {
   color: rgba(255, 255, 255, 0.372);
-  line-height: 1em;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-style: italic;
   text-align: center;
+  line-height: 5em;
 }
 
 .splitImageContainer {
@@ -580,31 +584,33 @@ body {
 .splitImageContainer .splitImageContainerTop {
   width: 100%;
   margin: 19px;
+  margin-bottom: 0;
 }
 .splitImageContainer .splitImageContainerBottom {
   width: 100%;
   margin: 19px;
+  margin-top: 0;
 }
 .splitImageContainer .splitImage {
-  width: 46%;
-  margin: 0.5em;
   border: 5px solid rgba(255, 255, 255, 0.372);
+  width: 92%;
+  margin: 0.5em 0;
+}
+.splitImageContainer p {
+  margin: 0;
+  font-size: 12px;
 }
 
 .halfImage {
-  width: 50px;
-}
-
-.halfImage {
-  width: 99%;
-  height: 20em;
+  width: 60%;
+  height: 37em;
 }
 
 .halfChart {
-  width: 76%;
-  position: relative;
-  top: -6.5em;
-  right: -7em;
+  width: 60%;
+  position: absolute;
+  top: 11em;
+  right: 0em;
 }
 
 .dataContainer {
@@ -612,20 +618,19 @@ body {
   top: 0;
 }
 .dataContainer .dataOnVideo {
-  width: 10em;
   position: absolute;
+  width: 10em;
 }
 .dataContainer .dataOne {
-  top: 220px;
-  left: 618px;
-  width: 220px;
-  opacity: 0.8;
+  top: 267px;
+  left: 257px;
+  width: 149px;
   z-index: 1;
 }
 .dataContainer .dataTwo {
   width: 118px;
-  top: 348px;
-  left: 527px;
+  top: 359px;
+  left: 145px;
 }
 .dataContainer .dataThree {
   display: none;
@@ -635,16 +640,18 @@ body {
 }
 .dataContainer .dataFive {
   top: 220px;
-  left: 526px;
+  left: 139px;
   width: 122px;
+  opacity: 0.7;
 }
 .dataContainer .dataSix {
-  bottom: 184px;
-  right: 364px;
+  bottom: -10em;
+  right: -57em;
 }
 .dataContainer .dataSeven {
-  bottom: 288px;
-  right: 415px;
+  bottom: -10em;
+  right: -48em;
+  width: 124px;
 }
 
 .chartOnVideo {
@@ -666,15 +673,11 @@ body {
   right: -2em;
 }
 
-canvas {
-  background: rgba(57, 57, 73, 0.74);
-}
-
 .searchResultBar {
-  width: 100%;
-  position: relative;
-  top: 1em;
-  right: 1em;
+  width: 40%;
+  position: fixed;
+  top: 24em;
+  right: 31em;
 }
 
 .panelContainer {
@@ -794,6 +797,7 @@ canvas {
   height: 16px;
   border-radius: 8px;
   background: #ff9300;
+  margin-right: 0.5em;
 }
 
 .panelBottom .dot {
@@ -802,6 +806,27 @@ canvas {
 
 .panelBody .title {
   margin-bottom: 0;
+}
+.panelBody .titleOne {
+  color: #fc478f;
+}
+.panelBody .titleOneDot {
+  background: #fc478f;
+}
+.panelBody .titleTwo {
+  color: #00ffb2;
+}
+.panelBody .titleTwoDot {
+  background: #00ffb2;
+}
+.panelBody .titleThree {
+  color: #00b5ff;
+}
+.panelBody .titleThreeDot {
+  background: #00b5ff;
+}
+.panelBody .inActive {
+  opacity: 0.4;
 }
 .panelBody .detail {
   color: white;
@@ -812,20 +837,22 @@ canvas {
   border: none;
   position: relative;
   height: 100%;
+  padding-right: 0;
 }
 
 .panelSearchBarContainer {
   justify-content: center;
   justify-content: center;
-  border-bottom: 2px solid rgba(2, 80, 111, 0.5960784314);
+  border-bottom: 1px solid rgba(2, 80, 111, 0.5960784314);
   padding: 1em 0;
 }
 .panelSearchBarContainer .panelSearchBar {
   color: white;
   font-size: 12px;
   padding: 0.5em 1em;
+  padding-left: 3em;
   border-radius: 30px;
-  background: rgba(255, 255, 255, 0.372);
+  background: rgba(0, 97, 139, 0.5803921569);
   width: 80%;
   border: none;
 }
