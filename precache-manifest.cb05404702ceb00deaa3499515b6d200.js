@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb4b5617aa8a7807d4ff22322bfc79b9",
+    "revision": "46b8e27fb8bca5d58f7921984c99a8d6",
     "url": "/smartia_website/index.html"
   },
   {
-    "revision": "2a704f42047ab77fdff6",
-    "url": "/smartia_website/static/css/main.c7a8f0b8.chunk.css"
+    "revision": "a2d2175ded06f2fdf3ca",
+    "url": "/smartia_website/static/css/main.5afad3f0.chunk.css"
   },
   {
-    "revision": "3d0300b34ab253e28cc5",
-    "url": "/smartia_website/static/js/2.06250ff4.chunk.js"
+    "revision": "a0c209fbd8ffea3e8043",
+    "url": "/smartia_website/static/js/2.a1c1294f.chunk.js"
   },
   {
     "revision": "928fe7e39dfc266303fac7536c069751",
-    "url": "/smartia_website/static/js/2.06250ff4.chunk.js.LICENSE"
+    "url": "/smartia_website/static/js/2.a1c1294f.chunk.js.LICENSE"
   },
   {
-    "revision": "2a704f42047ab77fdff6",
-    "url": "/smartia_website/static/js/main.d5711c7f.chunk.js"
+    "revision": "a2d2175ded06f2fdf3ca",
+    "url": "/smartia_website/static/js/main.364fcb64.chunk.js"
   },
   {
     "revision": "d5282bda5a8341aaa0b0",
@@ -80,6 +80,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartia_website/static/media/factory.bc64ac1b.jpeg"
   },
   {
+    "revision": "12402f45f07cbbc4d0c9db081415e582",
+    "url": "/smartia_website/static/media/factory1.12402f45.jpg"
+  },
+  {
+    "revision": "b82c55f917d9b28346e2b615b3f2b78b",
+    "url": "/smartia_website/static/media/factory2.b82c55f9.jpg"
+  },
+  {
+    "revision": "c5303f794e9ccf6e739be10dddc52061",
+    "url": "/smartia_website/static/media/factory3.c5303f79.jpg"
+  },
+  {
+    "revision": "770bb4e8ac69020008775a198916240a",
+    "url": "/smartia_website/static/media/factory4.770bb4e8.png"
+  },
+  {
     "revision": "71fa5ac3c14676abb3daeec6ee92e6b1",
     "url": "/smartia_website/static/media/floorPlan.71fa5ac3.jpg"
   },
@@ -92,12 +108,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartia_website/static/media/floorPlan3.c7337bff.jpg"
   },
   {
-    "revision": "771dde8c305640ecf01868c18f6df98d",
-    "url": "/smartia_website/static/media/full.771dde8c.svg"
+    "revision": "cae2ab3c975b18834eaee728860f4a89",
+    "url": "/smartia_website/static/media/full.cae2ab3c.svg"
   },
   {
-    "revision": "0629b33f4ebccb9f71806e6f839ab949",
-    "url": "/smartia_website/static/media/half.0629b33f.svg"
+    "revision": "8547d42f862db84debf2baa63fad2baa",
+    "url": "/smartia_website/static/media/half.8547d42f.svg"
   },
   {
     "revision": "80e53cced5598fdcfb5b143c0c249600",
@@ -128,8 +144,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartia_website/static/media/image.3b6a8048.svg"
   },
   {
-    "revision": "c8c32ea45ad8475ffb631c6884281b46",
-    "url": "/smartia_website/static/media/location.c8c32ea4.svg"
+    "revision": "5bdfde4472168fa17a233ca2d9763aed",
+    "url": "/smartia_website/static/media/location.5bdfde44.svg"
   },
   {
     "revision": "1481afe5de6d1ecec32d0bbd4227f5c9",
@@ -144,8 +160,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartia_website/static/media/machine.6a203ac7.svg"
   },
   {
-    "revision": "2dff019639ce3dd5fd685da72f37fec5",
-    "url": "/smartia_website/static/media/map.2dff0196.svg"
+    "revision": "eed36569a63970a829f6655a3a2fc4f5",
+    "url": "/smartia_website/static/media/map.eed36569.svg"
   },
   {
     "revision": "2eb2bd447bb58f431e310b48b43b000f",
@@ -156,8 +172,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartia_website/static/media/sensor.ff224abd.svg"
   },
   {
-    "revision": "30dc62baaec9966a748d3b68ddbedd6a",
-    "url": "/smartia_website/static/media/split.30dc62ba.svg"
+    "revision": "8ccc584093f48e5f1eb21356800441e6",
+    "url": "/smartia_website/static/media/split.8ccc5840.svg"
   },
   {
     "revision": "adfb688c072f61d3b7bceec5ffb3de68",
