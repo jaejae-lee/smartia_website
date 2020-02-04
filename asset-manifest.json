@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/smartia_website/static/css/main.9d21a1da.chunk.css",
-    "main.js": "/smartia_website/static/js/main.364fcb64.chunk.js",
-    "main.js.map": "/smartia_website/static/js/main.364fcb64.chunk.js.map",
+    "main.js": "/smartia_website/static/js/main.1f4dc649.chunk.js",
+    "main.js.map": "/smartia_website/static/js/main.1f4dc649.chunk.js.map",
     "runtime-main.js": "/smartia_website/static/js/runtime-main.f6082e39.js",
     "runtime-main.js.map": "/smartia_website/static/js/runtime-main.f6082e39.js.map",
     "static/js/2.a1c1294f.chunk.js": "/smartia_website/static/js/2.a1c1294f.chunk.js",
     "static/js/2.a1c1294f.chunk.js.map": "/smartia_website/static/js/2.a1c1294f.chunk.js.map",
     "index.html": "/smartia_website/index.html",
-    "precache-manifest.8c62caf001a350d6f1a2bdf28b85f60f.js": "/smartia_website/precache-manifest.8c62caf001a350d6f1a2bdf28b85f60f.js",
+    "precache-manifest.5e6dc6a87aac29f67bd0e4ab7797083e.js": "/smartia_website/precache-manifest.5e6dc6a87aac29f67bd0e4ab7797083e.js",
     "service-worker.js": "/smartia_website/service-worker.js",
     "static/css/main.9d21a1da.chunk.css.map": "/smartia_website/static/css/main.9d21a1da.chunk.css.map",
     "static/js/2.a1c1294f.chunk.js.LICENSE": "/smartia_website/static/js/2.a1c1294f.chunk.js.LICENSE",
@@ -59,6 +59,6 @@
     "static/js/runtime-main.f6082e39.js",
     "static/js/2.a1c1294f.chunk.js",
     "static/css/main.9d21a1da.chunk.css",
-    "static/js/main.364fcb64.chunk.js"
+    "static/js/main.1f4dc649.chunk.js"
   ]
 }
