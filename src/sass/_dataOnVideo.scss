@@ -39,13 +39,21 @@
     }
 }
 .chartOnVideo{
-    width: 51%;
-    height: 52%;
+    // width: 408px;
+    // height: 145px;
     position: relative;
-    top: -22em;
-    right: 1em;
+    top: 601px;
+    right: -12px;
+    //background: red;
+    overflow: hidden;
     canvas{
         background: none;
+    }
+    .chart{
+        // position: relative;
+        // top: -52px;
+        // right: 36px;
+        // width: 457px;
     }
 }
 

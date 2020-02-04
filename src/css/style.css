@@ -271,7 +271,7 @@ body {
   position: fixed;
   top: 4em;
   right: 23em;
-  width: 15vw;
+  width: 16vw;
   background: rgba(255, 255, 255, 0.644);
   transform: translate(1rem, 0.5rem);
   border-radius: 0.5rem;
@@ -483,27 +483,29 @@ body {
 
 .videoButtonContainer {
   position: absolute;
-  top: 184px;
-  right: 334px;
-  display: block;
+  top: 167px;
+  right: 314px;
+  z-index: 1;
 }
 
 .videoButton {
   background: rgba(255, 255, 255, 0.372);
-  width: 46px;
-  height: 46px;
-  border-radius: 23px;
-  border: none;
+  border: 1px solid #011f2b;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
   display: block;
+  margin-top: 3px;
   margin-bottom: 7px;
+  margin-right: 5px;
 }
 .videoButton:hover {
   background: #00aaf1;
 }
 
 .videoButtonIcon {
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  padding-right: 4px;
 }
 
 .floorPlan {
@@ -519,8 +521,8 @@ body {
   outline: none;
 }
 .locationButton .locationIcon {
-  top: 24em;
-  right: 63em;
+  top: 366px;
+  right: 904px;
   width: 50px;
   position: absolute;
 }
@@ -545,8 +547,8 @@ body {
 }
 
 .IconFour {
-  top: 34em;
-  right: 49em;
+  top: 427px;
+  right: 620px;
   width: 50px;
   position: absolute;
 }
@@ -555,6 +557,7 @@ body {
   position: relative;
   bottom: 241px;
   right: -614px;
+  font-size: 13px;
 }
 .zones .zoneNumber {
   display: inline-block;
@@ -578,8 +581,8 @@ body {
   position: absolute;
   width: 17em;
   background-color: #011f2b;
-  top: 16em;
-  right: 46em;
+  top: 206px;
+  right: 645px;
   height: 11em;
   padding: 2em;
 }
@@ -598,20 +601,35 @@ body {
   width: 100%;
   margin: 19px;
   margin-bottom: 0;
+  margin-top: 47px;
 }
 .splitImageContainer .splitImageContainerBottom {
   width: 100%;
   margin: 19px;
   margin-top: 0;
+  margin-top: 28px;
+  position: absolute;
+  top: 183px;
+  right: -753px;
+}
+.splitImageContainer .imageContainer {
+  width: 388px;
+  overflow: hidden;
+  border: 3px solid #012c3d98;
 }
 .splitImageContainer .splitImage {
-  border: 5px solid rgba(255, 255, 255, 0.372);
-  width: 92%;
-  margin: 0.5em 0;
+  width: 500px;
+  height: 240px;
+  cursor: pointer;
+}
+.splitImageContainer .splitImage:hover {
+  filter: brightness(0.6);
 }
 .splitImageContainer p {
   margin: 0;
-  font-size: 12px;
+  font-size: 11px;
+  background: #011f2b;
+  padding: 1px 6px;
 }
 
 .halfImageContainer {
@@ -621,8 +639,8 @@ body {
 }
 
 .halfImage {
-  width: 515px;
-  height: 37em;
+  width: 100%;
+  height: 36.5em;
 }
 
 .halfChart {
@@ -674,22 +692,20 @@ body {
   right: -800px;
 }
 .dataContainer .dataSeven {
-  bottom: -10em;
-  right: -48em;
+  bottom: 50px;
+  right: -780px;
   width: 124px;
 }
 
 .chartOnVideo {
-  width: 51%;
-  height: 52%;
   position: relative;
-  top: -22em;
-  right: 1em;
+  top: 601px;
+  right: -12px;
+  overflow: hidden;
 }
 .chartOnVideo canvas {
   background: none;
 }
-
 .chart {
   width: 100%;
   height: 41rem;

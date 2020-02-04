@@ -8,7 +8,7 @@ class VideoMap extends Component {
     constructor(props){
         super(props);
         this.state={
-            isShown: true,
+            isShown: false,
         }
     }
     toggleShowThumbnail =() =>{

@@ -55,25 +55,29 @@
 //buttons
 .videoButtonContainer{
     position: absolute;
-    top: 184px;
-    right: 334px;
-    display: block;
+    top: 167px;
+    right: 314px;
+    z-index: 1;
+    //display: block;
 }
 .videoButton{
     background: $whiteA;
-    width: 46px;
-    height: 46px;
-    border-radius: 23px;
-    border: none;
+    border: 1px solid $mainDark;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
     display: block;
+    margin-top: 3px;
     margin-bottom: 7px;
+    margin-right: 5px;
     &:hover{
+        //background: $mainLight;
         background: $mainLight;
-        //background: $UIColorFour;
     }
 }
 .videoButtonIcon{
-    width: 25px; height: 25px;
+    width: 23px;
+    padding-right: 4px;
 }
 
 //Map
@@ -89,8 +93,8 @@
         outline: none;
     }
     .locationIcon{
-        top: 24em;
-        right: 63em;
+        top: 366px;
+        right: 904px;
         width: 50px;
         position: absolute;
     }
@@ -121,8 +125,8 @@
     position: absolute;
 }
 .IconFour{
-    top: 34em;
-    right: 49em;
+    top: 427px;
+    right: 620px;
     width: 50px;
     position: absolute;
 }
@@ -131,6 +135,7 @@
     position: relative;
     bottom: 241px;
     right: -614px;
+    font-size: 13px;
     .zoneNumber{
         display: inline-block;
         background-color: $mainLightA;
@@ -154,8 +159,8 @@
     position: absolute;
     width: 17em;
     background-color: #011f2b;
-    top: 16em;
-    right: 46em;
+    top: 206px;
+    right: 645px;
     height: 11em;
     padding: 2em;
     .videoThumbnail{
@@ -174,20 +179,36 @@
         width: 100%;
         margin: 19px;
         margin-bottom: 0;
+        margin-top: 47px;
     }
     .splitImageContainerBottom{
         width: 100%;
         margin: 19px;
         margin-top: 0;
+        margin-top: 28px;
+        position: absolute;
+        top: 183px;
+        right: -753px;
+    }
+    .imageContainer{
+        width: 388px;
+        overflow: hidden;
+        //border: 3px solid rgba(255, 255, 255, 0.372);
+        border: 3px solid $mainDarkA;
     }
     .splitImage{
-        border: 5px solid $whiteA;
-        width: 92%;
-        margin: 0.5em 0;
+        width: 500px;
+        height: 240px;
+        cursor: pointer;
+        &:hover{
+            filter: brightness(0.6);
+        }
     }
     p{
         margin:0;
-        font-size: 12px;
+        font-size: 11px;
+        background: $mainDark;
+        padding: 1px 6px;
     }
 }
 
@@ -198,8 +219,8 @@
     overflow: hidden;
 }
 .halfImage{
-    width: 515px;
-    height: 37em;
+    width: 100%;
+    height: 36.5em;
 }
 .halfChart{
     //background: $whiteA;

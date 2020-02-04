@@ -6,14 +6,17 @@ import table from '../img/table.svg';
 import image from '../img/image.svg';
 import video from '../img/video.svg';
 import factory from '../img/factory.jpeg';
+import factory1 from '../img/factory1.jpg';
+import factory2 from '../img/factory2.jpg';
+import factory3 from '../img/factory3.jpg';
+import factory4 from '../img/factory4.png';
 import DataOnVideo from './DataOnVideo';
 import Chart from './Chart';
 import VideoMap from './VideoMap';
-import ExplorerVisualButtons from './ExplorerVisualButtons';
 import map from '../img/map.svg';
 import data from '../img/data.svg';
 import split from '../img/split.svg';
-import half from '../img/half.svg';
+import half from '../img/half.svg'; 
 import full from '../img/full.svg';
 
 class ExplorerVisual extends Component {
@@ -101,24 +104,24 @@ class ExplorerVisual extends Component {
                 : isVideo && showSplit ?
                 <>
                 <section className="splitImageContainer">
-                    <div className="splitImageContainerTop flex">
-                        <div>
+                    <div className="splitImageContainerTop">
+                        <div className="imageContainer">
                             <p>Machine room</p>
                             <img src={factory} className="splitImage"/>
                         </div>
-                        <div>
+                        <div className="imageContainer">
                             <p>Engineering room</p> 
-                            <img src={factory} className="splitImage"/> 
+                            <img src={factory1} className="splitImage"/> 
                         </div>
                     </div>
-                    <div className="splitImageContainerBottom flex">
-                        <div>
+                    <div className="splitImageContainerBottom">
+                        <div className="imageContainer">
                             <p>Manufacturing room</p>
-                            <img src={factory} className="splitImage"/> 
-                            </div>
-                        <div>
+                            <img src={factory2} className="splitImage"/> 
+                        </div>
+                        <div className="imageContainer">
                             <p>Machine room</p>
-                            <img src={factory} className="splitImage"/> 
+                            <img src={factory3} className="splitImage"/> 
                         </div>
                     </div>
                 </section>
