@@ -17,11 +17,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .dataCompContainer {
   width: 95%;
-  height: 45em;
+  height: 41em;
   background-color: #012c3d98;
   margin: 0 auto;
   margin-top: 2em;
@@ -208,8 +209,8 @@ body {
 .notiContainer {
   position: relative;
   z-index: 1;
-  top: 22.5px;
-  left: 71.2em;
+  top: 19px;
+  left: 981px;
 }
 
 .nav__notification {
@@ -360,7 +361,8 @@ body {
   color: white;
 }
 .userContainer .logoIcon {
-  width: 2.5em;
+  width: 2.3em;
+  margin-bottom: 11px;
 }
 
 .notiContainerNew {
@@ -371,7 +373,7 @@ body {
   width: 40%;
   margin: 0 auto;
   margin-top: 4%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.705);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.596);
 }
 .searchBarContainer .searchBar {
   width: 40%;
@@ -399,7 +401,7 @@ body {
 .searchBarInputContainer {
   width: 50%;
   margin: auto;
-  margin-top: 4%;
+  margin-top: 40px;
 }
 .searchBarInputContainer .searchBar {
   width: 100%;
@@ -429,7 +431,7 @@ body {
 .visualContainer {
   right: 19em;
   width: 60%;
-  height: 45em;
+  height: 41em;
   background-color: #012c3d98;
 }
 .visualContainer .visualContainerHeader {
@@ -469,8 +471,9 @@ body {
   height: 41rem;
 }
 .visualContainer .visualContainerBody .video {
-  width: 100%;
-  height: 41rem;
+  width: 800px;
+  height: 572px;
+  margin: 10px;
   filter: brightness(0.6);
 }
 .visualContainer .visualContainerBody .chart {
@@ -480,8 +483,8 @@ body {
 
 .videoButtonContainer {
   position: absolute;
-  top: 11em;
-  right: 22em;
+  top: 184px;
+  right: 334px;
   display: block;
 }
 
@@ -503,6 +506,11 @@ body {
   height: 25px;
 }
 
+.floorPlan {
+  width: 91%;
+  position: relative;
+}
+
 .locationButton {
   background: none;
   border: none;
@@ -515,6 +523,11 @@ body {
   right: 63em;
   width: 50px;
   position: absolute;
+}
+
+.svgColor {
+  fill: red;
+  background: rebeccapurple;
 }
 
 .IconTwo {
@@ -539,9 +552,9 @@ body {
 }
 
 .zones {
-  position: absolute;
-  top: 37em;
-  right: 24em;
+  position: relative;
+  bottom: 241px;
+  right: -614px;
 }
 .zones .zoneNumber {
   display: inline-block;
@@ -601,16 +614,28 @@ body {
   font-size: 12px;
 }
 
+.halfImageContainer {
+  width: 428px;
+  height: 37em;
+  overflow: hidden;
+}
+
 .halfImage {
-  width: 60%;
+  width: 515px;
   height: 37em;
 }
 
 .halfChart {
-  width: 60%;
+  width: 385px;
+  height: 590px;
   position: absolute;
-  top: 11em;
-  right: 0em;
+  top: 166px;
+  right: 313px;
+  overflow: scroll;
+}
+
+.halfChartContainer {
+  width: 861px;
 }
 
 .dataContainer {
@@ -645,8 +670,8 @@ body {
   opacity: 0.7;
 }
 .dataContainer .dataSix {
-  bottom: -10em;
-  right: -57em;
+  bottom: -74px;
+  right: -800px;
 }
 .dataContainer .dataSeven {
   bottom: -10em;
@@ -676,8 +701,8 @@ body {
 .searchResultBar {
   width: 40%;
   position: fixed;
-  top: 24em;
-  right: 31em;
+  top: 21em;
+  right: 28em;
 }
 
 .panelContainer {
@@ -706,7 +731,7 @@ body {
   border-bottom: 1px solid rgba(2, 80, 111, 0.5960784314);
   color: white;
   padding: 0.8em;
-  font-size: 13px;
+  font-size: 11px;
 }
 .panelContainer .panelList .two {
   color: rgba(255, 255, 255, 0.63);
@@ -715,11 +740,11 @@ body {
   color: #00aaf1;
 }
 .panelContainer .sensorTitle {
-  margin-left: 5em;
   justify-content: flex-start;
+  margin-left: 50px;
 }
 .panelContainer .sensorTitleText {
-  margin-right: 2em;
+  margin-right: 21px;
 }
 .panelContainer .panelButton {
   background: none;
@@ -745,6 +770,7 @@ body {
 
 .panelListName {
   margin-right: 8.7em;
+  margin-right: 85px;
 }
 
 .arrow {
@@ -797,7 +823,8 @@ body {
   height: 16px;
   border-radius: 8px;
   background: #ff9300;
-  margin-right: 0.5em;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .panelBottom .dot {
@@ -838,6 +865,7 @@ body {
   position: relative;
   height: 100%;
   padding-right: 0;
+  padding-left: 0;
 }
 
 .panelSearchBarContainer {
@@ -853,8 +881,9 @@ body {
   padding-left: 3em;
   border-radius: 30px;
   background: rgba(0, 97, 139, 0.5803921569);
-  width: 80%;
   border: none;
+  width: 250px;
+  margin-right: 12px;
 }
 .panelSearchBarContainer .searchIconSmall {
   width: 13px;

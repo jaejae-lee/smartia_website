@@ -24,7 +24,7 @@
         border-bottom: 1px solid lighten($mainDarkA, 10%);
         color: $white;
         padding: 0.8em;
-        font-size: 13px;
+        font-size: 11px;
         .one{
             
         }
@@ -36,11 +36,11 @@
         }
     }
     .sensorTitle{
-        margin-left: 5em;
         justify-content: flex-start;
+        margin-left: 50px;
     }
     .sensorTitleText{
-        margin-right:2em;
+        margin-right: 21px;
     } 
     .panelButton{
         background: none;
@@ -66,6 +66,7 @@
 }
 .panelListName{
     margin-right: 8.7em;
+    margin-right: 85px;
 }
 .arrow{
     width: 13px; 

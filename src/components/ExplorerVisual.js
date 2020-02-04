@@ -142,9 +142,13 @@ class ExplorerVisual extends Component {
                 <section className="halfImageContainer flex">
                     <img src={videoGif} className="halfImage"/>
                 </section>
+              
                 <section className="halfChart">
-                    <Chart/>
+                    <div className="halfChartContainer">
+                        <Chart/>
+                    </div>
                 </section>
+                
                 <div className="videoButtonContainer flex">
                     <button className="videoButton buttonVideoSplit"
                                 onClick={this.showMap}>

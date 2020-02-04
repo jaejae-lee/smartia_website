@@ -17,6 +17,7 @@ class ExplorerPanelRight extends Component {
         this.setState({ checked });
     }
     render() { 
+        const UIColorTwo = '#00b5ff';
         return ( 
             <section className="panelContainer">
                 <div className="panelHeader"><span>Asset</span> Control</div>
@@ -43,22 +44,34 @@ class ExplorerPanelRight extends Component {
                     <img src={sensor} className="panelIcons"alt=""/>
                     <span className="sensorTitleText Textblue">Sensor Title</span>
                     <Switch className="toggleButton"
-                            onChange={this.handleChange} 
-                            checked={this.state.checked} />
+                            onChange={this.handleChange}
+                            checked={this.state.checked}
+                            height={19}
+                            width={42}
+                            onColor={UIColorTwo}
+                            uncheckedIcon={false} />
                     </div>
                     <div className="panelList sensorTitle five flex">
                     <img src={sensor} className="panelIcons"alt=""/>
                     <span className="sensorTitleText Textblue">Sensor Title</span>
                     <Switch className="toggleButton"
                             onChange={this.handleChange} 
-                            checked={this.state.checked} />
+                            checked={this.state.checked}
+                            height={19}
+                            width={42}
+                            onColor={UIColorTwo}
+                            uncheckedIcon={false} />
                     </div>
                     <div className="panelList sensorTitle five flex opacity">
                     <img src={sensor} className="panelIcons"alt=""/>
                     <span className="sensorTitleText">Sensor Title</span>
                     <Switch className="toggleButton"
                             onChange={this.handleChange} 
-                            checked={this.state.checked} />
+                            checked={this.state.checked}
+                            height={19}
+                            width={42}
+                            onColor={UIColorTwo}
+                            uncheckedIcon={false} />
                     </div>
         
                     

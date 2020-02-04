@@ -1,7 +1,7 @@
 .visualContainer{
     right: 19em;
     width: 60%;
-    height: 45em;
+    height: 41em;
     background-color: $mainDarkA;
     
     .visualContainerHeader{
@@ -40,8 +40,9 @@
     .visualContainerBody{
         height: 41rem;
         .video{
-            width: 100%;
-            height: 41rem;
+            width: 800px;
+            height: 572px;
+            margin: 10px;
             filter: brightness(0.6);
         }
         .chart{ 
@@ -54,8 +55,8 @@
 //buttons
 .videoButtonContainer{
     position: absolute;
-    top: 11em;
-    right: 22em;
+    top: 184px;
+    right: 334px;
     display: block;
 }
 .videoButton{
@@ -77,6 +78,8 @@
 
 //Map
 .floorPlan{
+    width: 91%;
+    position: relative;
 }
 
 .locationButton{
@@ -95,9 +98,15 @@
     //     fill: red;
     // }
 }
-// .locationIconSVG{
+
+// .locationIconSVG *{
 //     fill: red;
 // }
+
+.svgColor{
+    fill: red;
+    background: rebeccapurple;
+}
 
 .IconTwo{
     top: 14em;
@@ -119,9 +128,9 @@
 }
 
 .zones{
-    position: absolute;
-    top: 37em;
-    right: 24em;
+    position: relative;
+    bottom: 241px;
+    right: -614px;
     .zoneNumber{
         display: inline-block;
         background-color: $mainLightA;
@@ -183,16 +192,24 @@
 }
 
 //Half Images
-.halfImage{
-    // width: 99%;
-    // height: 20em;
-    width: 60%;
+.halfImageContainer {
+    width: 428px;
     height: 37em;
-    //z-index: 1;
+    overflow: hidden;
+}
+.halfImage{
+    width: 515px;
+    height: 37em;
 }
 .halfChart{
-    width: 60%;
+    //background: $whiteA;
+    width: 385px;
+    height: 590px;
     position: absolute;
-    top: 11em;
-    right: 0em;
+    top: 166px;
+    right: 313px;
+    overflow: scroll;
+}
+.halfChartContainer{
+    width: 861px;
 }

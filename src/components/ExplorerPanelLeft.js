@@ -4,6 +4,7 @@ import searchIcon from '../img/searchIcon.svg';
 
 class ExplorerPanelLeft extends Component {
     state = {  }
+    
     render() { 
         return ( 
             <section className="panelContainer">

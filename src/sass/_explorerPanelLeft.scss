@@ -22,7 +22,8 @@
         width:16px; height: 16px;
         border-radius: 8px;
         background: $UIColorOne;
-        margin-right: 0.5em;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
 .panelBottom{
@@ -67,6 +68,8 @@
         position: relative;
         height: 100%;
         padding-right: 0;
+        padding-left: 0;
+
     }
 }
 
@@ -82,8 +85,9 @@
         padding-left: 3em;
         border-radius: 30px;
         background: darken($mainLightA, 20%);
-        width: 80%;
         border: none;
+        width: 250px;
+        margin-right: 12px;
     }
     .searchIconSmall{
         width: 13px;
