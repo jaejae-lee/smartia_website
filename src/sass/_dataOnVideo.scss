@@ -6,15 +6,14 @@
         width: 10em;
     }
     .dataOne{
-        top: 267px;
-        left: 257px;
-        width: 149px;
-        z-index: 1;
+        top: 3px;
+        left: 4px;
+        width: 115px;
     }
     .dataTwo{
-        width: 118px;
-        top: 359px;
-        left: 145px;
+        width: 89px;
+        top: 41px;
+        left: 9px;
     }
     .dataThree{
         display: none;
@@ -23,37 +22,50 @@
         display: none;
     }
     .dataFive{
-        top: 220px;
-        left: 139px;
-        width: 122px;
-        opacity: 0.7;
+        top: 18px;
+        left: 123px;
+        width: 86px;
+        opacity: 0.8;
     }
     .dataSix{
-        bottom: -74px;
-        right: -800px;
+        top: 24px;
+        right: -2px;
+        width: 130px;
     }
     .dataSeven{
-        bottom: 50px;
-        right: -780px;
-        width: 124px;
+        top: 137px;
+        right: 120px;
+        width: 95px;
     }
+    .dataEight{
+        top: 131px;
+        left: 115px;
+        width: 100px;
+    }
+    .dataNine{
+        top: 42px;
+        right: 111px;
+        width: 90px;
+    }
+    //box
+    .dataBox{
+        width: 225px;
+        height: 243px;
+        border: 1px solid $whiteA;
+        background: rgba(255, 255, 255, 0.233);
+        position: absolute;
+        top: 218px;
+        right: -267px;
+    }
+    .two{
+        top: 529px;
+        left: 474px;
+        width: 305px;
+        height: 167px;
+    }   
+    .one{
+
+    }    
 }
-.chartOnVideo{
-    // width: 408px;
-    // height: 145px;
-    position: relative;
-    top: 601px;
-    right: -12px;
-    //background: red;
-    overflow: hidden;
-    canvas{
-        background: none;
-    }
-    .chart{
-        // position: relative;
-        // top: -52px;
-        // right: 36px;
-        // width: 457px;
-    }
-}
+
 

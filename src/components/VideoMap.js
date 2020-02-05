@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import floorPlan from '../img/floorPlan.jpg';
-import floorPlan3 from '../img/floorPlan3.jpg';
 import floorPlan2 from '../img/floorPlan2.png';
 import location from '../img/location.svg';
+import floorPlan3 from '../img/floorPlan3.jpg';
 
 class VideoMap extends Component {
     constructor(props){
@@ -32,7 +31,7 @@ class VideoMap extends Component {
             <img src={location} className="locationIcon IconFour" alt=""/>
             { isShown ? 
             <div className="videoThumbnailContainer">
-                <p className="videoThumbnail">Video Thumbnail here</p>
+                <img src={floorPlan3} className="videoThumbnailImage" alt=""/>
             </div>
             : null }
             <section className="zones">

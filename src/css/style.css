@@ -527,9 +527,29 @@ body {
   position: absolute;
 }
 
-.svgColor {
-  fill: red;
-  background: rebeccapurple;
+.videoThumbnailContainer {
+  position: absolute;
+  width: 17em;
+  background-color: #011f2b;
+  top: 206px;
+  right: 645px;
+  height: 11em;
+  padding: 2em;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.372);
+}
+.videoThumbnailContainer .videoThumbnail {
+  color: white;
+  font-size: 1.3em;
+  font-style: italic;
+  text-align: center;
+  line-height: 5em;
+}
+.videoThumbnailContainer .videoThumbnailImage {
+  width: 309px;
+  position: absolute;
+  top: -19px;
+  right: -17px;
 }
 
 .IconTwo {
@@ -575,23 +595,6 @@ body {
   margin-bottom: 1em;
   margin-left: 1em;
   font-style: italic;
-}
-
-.videoThumbnailContainer {
-  position: absolute;
-  width: 17em;
-  background-color: #011f2b;
-  top: 206px;
-  right: 645px;
-  height: 11em;
-  padding: 2em;
-}
-.videoThumbnailContainer .videoThumbnail {
-  color: rgba(255, 255, 255, 0.372);
-  font-size: 1.3em;
-  font-style: italic;
-  text-align: center;
-  line-height: 5em;
 }
 
 .splitImageContainer {
@@ -665,15 +668,14 @@ body {
   width: 10em;
 }
 .dataContainer .dataOne {
-  top: 267px;
-  left: 257px;
-  width: 149px;
-  z-index: 1;
+  top: 3px;
+  left: 4px;
+  width: 115px;
 }
 .dataContainer .dataTwo {
-  width: 118px;
-  top: 359px;
-  left: 145px;
+  width: 89px;
+  top: 41px;
+  left: 9px;
 }
 .dataContainer .dataThree {
   display: none;
@@ -682,29 +684,45 @@ body {
   display: none;
 }
 .dataContainer .dataFive {
-  top: 220px;
-  left: 139px;
-  width: 122px;
-  opacity: 0.7;
+  top: 18px;
+  left: 123px;
+  width: 86px;
+  opacity: 0.8;
 }
 .dataContainer .dataSix {
-  bottom: -74px;
-  right: -800px;
+  top: 24px;
+  right: -2px;
+  width: 130px;
 }
 .dataContainer .dataSeven {
-  bottom: 50px;
-  right: -780px;
-  width: 124px;
+  top: 137px;
+  right: 120px;
+  width: 95px;
 }
-
-.chartOnVideo {
-  position: relative;
-  top: 601px;
-  right: -12px;
-  overflow: hidden;
+.dataContainer .dataEight {
+  top: 131px;
+  left: 115px;
+  width: 100px;
 }
-.chartOnVideo canvas {
-  background: none;
+.dataContainer .dataNine {
+  top: 42px;
+  right: 111px;
+  width: 90px;
+}
+.dataContainer .dataBox {
+  width: 225px;
+  height: 243px;
+  border: 1px solid rgba(255, 255, 255, 0.372);
+  background: rgba(255, 255, 255, 0.233);
+  position: absolute;
+  top: 218px;
+  right: -267px;
+}
+.dataContainer .two {
+  top: 529px;
+  left: 474px;
+  width: 305px;
+  height: 167px;
 }
 .chart {
   width: 100%;

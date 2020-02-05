@@ -98,19 +98,33 @@
         width: 50px;
         position: absolute;
     }
-    // .locationIconSVG:hover{
-    //     fill: red;
-    // }
 }
 
-// .locationIconSVG *{
-//     fill: red;
-// }
-
-.svgColor{
-    fill: red;
-    background: rebeccapurple;
+.videoThumbnailContainer{
+    position: absolute;
+    width: 17em;
+    background-color: $mainDark;
+    top: 206px;
+    right: 645px;
+    height: 11em;
+    padding: 2em;
+    overflow: hidden;
+    border: 2px solid $whiteA;
+    .videoThumbnail{
+        color: $white;
+        font-size: 1.3em;
+        font-style: italic;
+        text-align: center;
+        line-height: 5em;
+    }
+    .videoThumbnailImage{
+        width: 309px;
+        position: absolute;
+        top: -19px;
+        right: -17px;
+    }
 }
+
 
 .IconTwo{
     top: 14em;
@@ -152,23 +166,6 @@
         margin-bottom: 1em;
         margin-left: 1em;
         font-style: italic;
-    }
-}
-
-.videoThumbnailContainer{
-    position: absolute;
-    width: 17em;
-    background-color: #011f2b;
-    top: 206px;
-    right: 645px;
-    height: 11em;
-    padding: 2em;
-    .videoThumbnail{
-        color: rgba(255, 255, 255, 0.372);
-        font-size: 1.3em;
-        font-style: italic;
-        text-align: center;
-        line-height: 5em;
     }
 }
 
