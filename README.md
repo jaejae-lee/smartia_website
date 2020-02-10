@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Smart factory web application 
 
 This is the project for company SMARTIA.
-as a UX Engineer candidate, planned UX/UI and built a demo site of the web application using React.js.
+As a UX Engineer candidate, planned UX/UI and built a demo site of the web application using React.js.
 
 View the live demo site here: https://jaejae-lee.github.io/smartia_website
 
