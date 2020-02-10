@@ -10,9 +10,9 @@ View the live demo site here: https://jaejae-lee.github.io/smartia_website
 ## How to set up 
 
 NPM and a Command Line tool is needed.<br/>
-`git clone this repo and cd into the project folder`<br/>
-`run npm install`<br/>
-`run npm start to view on localhost:3000 on browser`<br/>
+git clone this repo and cd into the project folder. <br/>
+run `npm install` <br/>
+run `npm start` to view on localhost:3000 on browser. <br/>
 
 ## Target users 
 Workers in a smart factory : <br/>
