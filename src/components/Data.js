@@ -7,16 +7,14 @@ import ExplorerPanelRight from './ExplorerPanelRight';
 import ExplorerPanelLeft from './ExplorerPanelLeft';
 
 class Data extends Component {
-    state = {  }
+
     render() { 
         return (
             <>
             <section className="dataCompContainer flex">
-                {/* <img src={data2} className="dataComp dataCompRight" alt="data page" /> */}
                 <ExplorerPanelRight/>
                 <ExplorerVisual/>
                 <ExplorerPanelLeft/>
-                {/* <img src={data3} className="dataComp dataCompLeft" alt="data page" />  */}
             </section>
             <MainUIsSmall/>
             </>

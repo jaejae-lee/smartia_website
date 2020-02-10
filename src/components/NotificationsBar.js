@@ -21,16 +21,6 @@ import Media from './Media';
                  action: 'has finised doing stuff and',
                  content: 'has finised doing stuff and',
                   new: true},
-              //  {
-              //    name: 'Lena Direlson',
-              //    action: 'checked in at',
-              //    content: 'Greenstreet Pub',
-              //    new: false},
-              //  {
-              //    name: 'Dan Witherson',
-              //    action: 'also commented on',
-              //    content: 'your status',
-              //    new: false}
             ]
       };
     }

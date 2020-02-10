@@ -17,7 +17,6 @@ import searchIcon from '../img/searchIcon.svg';
     render() {
       return (
           <>
-          {/* <img src={searchIcon} className="searchIcon" alt="search icon" />  */}
           <div className="home_searchBarContainer">
             <img src={searchIcon} className="searchIcon" alt="search icon" /> 
             <input type="input" className="searchBar" placeholder="Search here" 

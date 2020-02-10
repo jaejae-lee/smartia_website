@@ -10,7 +10,7 @@ import data8 from '../img/data8.svg';
 import data9 from '../img/data9.svg';
 
 class DataOnVideo extends Component {
-    state = {  }
+
     render() { 
         return (
             <>

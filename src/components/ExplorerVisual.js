@@ -9,7 +9,6 @@ import factory from '../img/factory.jpeg';
 import factory1 from '../img/factory1.jpg';
 import factory2 from '../img/factory2.jpg';
 import factory3 from '../img/factory3.jpg';
-import factory4 from '../img/factory4.png';
 import DataOnVideo from './DataOnVideo';
 import Chart from './Chart';
 import VideoMap from './VideoMap';
@@ -98,7 +97,7 @@ class ExplorerVisual extends Component {
                                 <img src={data} className="videoButtonIcon" alt=""/>
                         </button>
                     </div>
-                    {/* <ExplorerVisualButtons /> */}
+     
                     { showData? <DataOnVideo/> : null }
                 </>
                 : isVideo && showSplit ?

@@ -9,7 +9,7 @@ import icon6 from '../img/icon6.svg';
 import { Link } from "react-router-dom";
 
 class MainUIs extends Component {
-    state = {  }
+
     render() { 
         return (
             <>

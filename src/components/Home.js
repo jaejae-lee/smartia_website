@@ -4,6 +4,7 @@ import MainUIs from './MainUIs';
 import SearchBarNew from './SearchBarNew';
 
 class Home extends Component {
+    
     render() { 
         return (
             <>

@@ -8,7 +8,7 @@ import icon5 from '../img/icon5.svg';
 import { Link } from "react-router-dom";
 
 class MainUIs extends Component {
-    state = {  }
+
     render() { 
         return (
             <>

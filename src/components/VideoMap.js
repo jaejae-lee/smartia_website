@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import floorPlan2 from '../img/floorPlan2.png';
 import location from '../img/location.svg';
+import location1 from '../img/location1.svg';
 import floorPlan3 from '../img/floorPlan3.jpg';
 
 class VideoMap extends Component {
@@ -24,7 +25,7 @@ class VideoMap extends Component {
                     onMouseOut={ this.toggleShowThumbnail }
                     onClick={ this.props.onClick }
             >
-                <img src={location} className="locationIcon IconOne locationIconSVG" alt=""/>
+                <img src={location1} className="locationIcon IconOne locationIconSVG" alt=""/>
             </button>
             <img src={location} className="locationIcon IconTwo" alt=""/>
             <img src={location} className="locationIcon IconThree" alt=""/>

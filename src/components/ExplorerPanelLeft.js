@@ -3,7 +3,6 @@ import { InputGroup } from 'react-bootstrap';
 import searchIcon from '../img/searchIcon.svg';
 
 class ExplorerPanelLeft extends Component {
-    state = {  }
     
     render() { 
         return ( 
