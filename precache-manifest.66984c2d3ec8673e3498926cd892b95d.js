@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c65c0d0e39076b3886b64bc66816eea6",
+    "revision": "e2d1ef1b24c59a42ff9f8308ce720846",
     "url": "/smartia_website/index.html"
   },
   {
-    "revision": "ce5c1649e7e7a8c34df6",
-    "url": "/smartia_website/static/css/main.40af7cc7.chunk.css"
+    "revision": "d99f1008804d0ea66953",
+    "url": "/smartia_website/static/css/main.e30e1fa6.chunk.css"
   },
   {
-    "revision": "4ea7eab873603421ef6e",
-    "url": "/smartia_website/static/js/2.3fcf0f71.chunk.js"
+    "revision": "6d17827a8fbfc729b5b0",
+    "url": "/smartia_website/static/js/2.dc3af480.chunk.js"
   },
   {
     "revision": "928fe7e39dfc266303fac7536c069751",
-    "url": "/smartia_website/static/js/2.3fcf0f71.chunk.js.LICENSE"
+    "url": "/smartia_website/static/js/2.dc3af480.chunk.js.LICENSE"
   },
   {
-    "revision": "ce5c1649e7e7a8c34df6",
-    "url": "/smartia_website/static/js/main.1d75b671.chunk.js"
+    "revision": "d99f1008804d0ea66953",
+    "url": "/smartia_website/static/js/main.c32dd2a4.chunk.js"
   },
   {
     "revision": "d5282bda5a8341aaa0b0",
@@ -98,10 +98,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c5303f794e9ccf6e739be10dddc52061",
     "url": "/smartia_website/static/media/factory3.c5303f79.jpg"
-  },
-  {
-    "revision": "770bb4e8ac69020008775a198916240a",
-    "url": "/smartia_website/static/media/factory4.770bb4e8.png"
   },
   {
     "revision": "cf3ccc21791d3be8d5a9e58b78171b61",
