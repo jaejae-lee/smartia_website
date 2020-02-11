@@ -4,6 +4,8 @@ import dataIcon from '../img/dataIcon.svg'
 import icon4 from '../img/icon4.svg'
 import logOut from '../img/logOut.svg'
 import NavBarHeader from './NavBarHeader';
+import { Link } from "react-router-dom";
+
 
 function Header() {
     return (
@@ -11,7 +13,9 @@ function Header() {
         <div className="headerContainer">
         <NavBarHeader/>
             <nav className="nav flex">
+            <Link to="/">
                 <img src={logo} className="logo" alt="logo"/>
+            </Link>
                 <span className="logOutContainer flex">
                     <img src={dataIcon} className="dataIcon dataIconHeader Iconone" alt="button for data page" />
                     <img src={icon4} className="dataIcon dataIconHeader" alt="button for data page" />
