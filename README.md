@@ -3,16 +3,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Smart factory web application 
 
 This is the project for company SMARTIA.
-as a UX Engineer candidate, planned UX/UI and built a demo site of the web application using React.js.
+As a UX Engineer candidate, planned UX/UI and built a demo site of the web application using React.js.
 
 View the live demo site here: https://jaejae-lee.github.io/smartia_website
 
 ## How to set up 
 
 NPM and a Command Line tool is needed.<br/>
-git clone this repo and cd into the project folder. <br/>
-run `npm install` <br/>
-run `npm start` to view on localhost:3000 on browser. <br/>
+1. git clone this repo and cd into the project folder. <br/>
+2. run `npm install` <br/>
+3. run `npm start` to view on localhost:3000 on browser. <br/>
 
 ## Target users 
 Workers in a smart factory : <br/>
